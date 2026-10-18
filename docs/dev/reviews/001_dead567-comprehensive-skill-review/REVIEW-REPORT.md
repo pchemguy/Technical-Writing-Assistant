@@ -39,8 +39,8 @@ U-001 assessed the complete standalone package as one coherent review unit. The 
 
 | Finding | Type | Priority | Status | Confidence |
 | --- | --- | --- | --- | --- |
-| R-001 | Local instruction-precision defect | Low | Open; not repaired | High about wording; low expected behavioral impact |
-| R-002 | Illustrative wording recommendation | Low | Open; not repaired | Medium; ambiguity rather than a proven contradiction |
+| R-001 | Local instruction-precision defect | Low | Verified by V-001 | High about wording; low expected behavioral impact |
+| R-002 | Illustrative wording recommendation | Low | Verified by V-002 | Medium; ambiguity rather than a proven contradiction |
 
 No other defect was manufactured from module length, repeated safeguards, conventional headings, missing external research, or historical records.
 
@@ -56,7 +56,7 @@ No other defect was manufactured from module length, repeated safeguards, conven
 | Bounded correction owner | Scientific-writing module only. State that editorial work must not imply that data analysis or external verification occurred when it did not. No broader policy change or new gate is needed. |
 | Suggested wording | “An editorial pass does not imply that data analysis or external verification was performed.” |
 | Objective recheck | Read the replacement beside the module's inputs and outputs and confirm they agree about editorial assessment versus analysis/verification actually performed. Check that genuine separately authorized analysis is not denied or relabeled. |
-| Disposition | Open. This report proposes the correction; it does not implement it. |
+| Disposition | Accepted and verified under [V-001](REVISION-REPORT.md#v-001). Original baseline observation retained. |
 
 ### R-002 — Avoid implying that untested conditions excluded an effect
 
@@ -68,7 +68,7 @@ No other defect was manufactured from module length, repeated safeguards, conven
 | Bounded correction owner | README example and its explanation. Clarify the intended observation in both illustrative input and output, rather than silently strengthen or weaken one side. |
 | Suggested direction | Describe losses observed in dry-condition testing and separately retain that humid performance was not tested. Keep the sample size and avoid adding a comparator, magnitude, significance claim or humidity result. |
 | Objective recheck | Compare the two example versions for sample size, condition and testing limits. Ask whether a reader could still infer a tested negative result under humidity. Preserve the illustrative, non-trial label. |
-| Disposition | Open recommendation. Resolve the intended meaning before revising the pair. |
+| Disposition | Accepted as a recommendation and verified under [V-002](REVISION-REPORT.md#v-002). The revision plan records the chosen observational meaning; original baseline observation retained. |
 
 ## Current-source file coverage
 
@@ -179,4 +179,4 @@ Publication remains pending until a suitable credential with Contents read/write
 
 Both matters are low priority. No package redesign, module split/merge, mandatory schema, new evidence mode, broad synonym pass or historical-record cleanup is justified by this review.
 
-Review execution is complete within the stated boundary. The campaign remains open at the human revision decision, with remote publication pending. No source repair, implementation continuation, merge or closure follows automatically.
+The original review ended at its review/publication checkpoint. The user subsequently authorized revision planning and execution. Both findings now have the verified dispositions above; action publication and integration are recorded in the revision report. This continuation does not rewrite the original observations or convert earlier consumer evidence into post-change trials.
