@@ -29,11 +29,11 @@ Evidence work has exactly two modes: independent external research and verificat
 
 ### Illustrative revision
 
-Input: “In a pilot that involved 12 devices, lower losses were observed only under dry conditions, and performance in humid conditions was not tested.”
+Input: “In a pilot that involved 12 devices tested under dry conditions, lower losses were observed, and performance in humid conditions was not tested.”
 
-Revision: “A 12-device pilot showed lower losses only under dry conditions. Performance in humid conditions was not tested.”
+Revision: “A 12-device pilot under dry conditions showed lower losses. Performance in humid conditions was not tested.”
 
-The sample size and conditions survive; broader applicability remains unestablished. This is an illustrative example, not a new trial result. A review-only request instead receives located findings and remedies, without an automatic rewrite.
+The sample size and testing limits survive; broader applicability remains unestablished. This is an illustrative example, not a new trial result. A review-only request instead receives located findings and remedies, without an automatic rewrite.
 
 ## Project contents
 
@@ -54,3 +54,5 @@ python tools/check_package.py
 ```
 
 This development checker does not execute the skill or retrieve external sources.
+
+Development uses [SDD Manager](SDD-MANAGER.md). See the [AI-assisted development disclosure](AI_DISCLOSURE.md).
