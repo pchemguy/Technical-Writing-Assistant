@@ -54,3 +54,5 @@ python tools/check_package.py
 ```
 
 This development checker does not execute the skill or retrieve external sources.
+
+Development uses [SDD Manager](SDD-MANAGER.md). See the [AI-assisted development disclosure](AI_DISCLOSURE.md).
