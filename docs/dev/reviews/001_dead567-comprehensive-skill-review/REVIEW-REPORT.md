@@ -10,8 +10,8 @@
 - Creation parent and prospective integration target: `main`.
 - Plan: [REVIEW-PLAN.md](REVIEW-PLAN.md).
 - Assessment: complete for the stated source boundary, with two low-priority findings and no blocking or medium/high-priority finding.
-- Campaign state: review complete; findings remain open for the human's revision decision. No runtime repairs, installation, merge or campaign closure are authorized by this review.
-- Publication: pending authentication recovery. The GitHub integration returned HTTP 403 on blob writes; HTTPS Git rejected the subsequently supplied credential, and an independent GitHub API check returned HTTP 401, Bad credentials. No remote campaign checkpoint or PR was created.
+- Campaign state: review complete; the user subsequently authorized revision planning and execution on 2026-10-18. Both findings are accepted under the [revision plan](REVISION-PLAN.md); current action evidence is in the [revision report](REVISION-REPORT.md). Baseline observations below are retained.
+- Publication: review commit `9a76533259836801ccbb50f9389b59b6e55f506e` was subsequently pushed and verified after credential replacement. Earlier failed attempts below describe the review checkpoint's recovery history.
 
 This is a new review of current source, not a resumption of the stopped local reconciliation branch. The old repository's alias README identified the canonical repository above. The separate legacy checkout, unpublished plan and untracked evidence remain untouched.
 

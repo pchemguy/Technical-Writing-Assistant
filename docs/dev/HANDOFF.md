@@ -1,6 +1,6 @@
 # Project handoff
 
-Checkpoint: campaign 001_dead567 review complete; publication blocked.
+Checkpoint: campaign 001_dead567 revision entry; review published, two actions planned.
 This snapshot describes that checkpoint. Recover subsequent work from the campaign report and Git; the containing commit identifies it.
 
 Outcome: completed the current-source comprehensive review and fresh bounded observations. Two low-priority findings remain open; no blocking or medium/high-priority finding was identified. The stopped legacy checkout and its pending files remain untouched.
@@ -9,17 +9,17 @@ Outcome: completed the current-source comprehensive review and fresh bounded obs
 
 - Workflow/stage/owner: revision campaign, comprehensive review, SDD Manager coordinator with Technical Writing Assistant and Agent Package Author criteria.
 - Governing inputs: [SPEC.md](SPEC.md), [CAPABILITY_MAP.md](CAPABILITY_MAP.md), [PLAN.md](PLAN.md).
-- Active records: [REVIEW-PLAN.md](reviews/001_dead567-comprehensive-skill-review/REVIEW-PLAN.md) and [REVIEW-REPORT.md](reviews/001_dead567-comprehensive-skill-review/REVIEW-REPORT.md).
+- Active records: [REVIEW-PLAN.md](reviews/001_dead567-comprehensive-skill-review/REVIEW-PLAN.md), [REVIEW-REPORT.md](reviews/001_dead567-comprehensive-skill-review/REVIEW-REPORT.md), [REVISION-PLAN.md](reviews/001_dead567-comprehensive-skill-review/REVISION-PLAN.md) and [REVISION-REPORT.md](reviews/001_dead567-comprehensive-skill-review/REVISION-REPORT.md).
 - Reviewed package: [SKILL.md](../../technical-writing-assistant/SKILL.md), its references and presentation sources.
 - Required facilities: local source access, Python structural checks and authenticated Git publication to the canonical repository.
 
 ## Scope and human decisions
 
-- Request: open a new revision campaign and run a comprehensive review.
-- Authorized outputs: review records, required workflow adoption/navigation, checkpoint and publication.
-- Stop: deliver the review and proposed revision queue; do not apply source repairs, install the skill, merge or close the campaign.
-- No revision acceptance or implementation preapproval is inferred.
-- GitHub connector reads work, but actual blob writes returned HTTP 403. The supplied credential was saved as an ignored, untracked `gh.tkn` with mode 0600; Git authentication failed and GitHub's API independently returned HTTP 401, Bad credentials. No credential value is retained in tracked records.
+- Request: after the comprehensive review, plan and execute the revision (2026-10-18).
+- Authorized outputs: retained plan/report, two focused source corrections, per-action publication and verified campaign integration.
+- Stop: finish the two accepted revisions, verify and publish their integration; do not install the skill or extend its behavior.
+- R-001 and R-002 are accepted; R-002 is clarified as an observational illustration, not established as a factual contradiction.
+- Credential replacement recovered HTTPS Git publication. Remote readback matches review commit `9a76533259836801ccbb50f9389b59b6e55f506e`. `gh.tkn` remains ignored, untracked and mode 0600; no credential value is retained in tracked records.
 - Reporting: Standard after Explicit bootstrap; Minimal and Explicit remain available.
 
 ## Branches and return
@@ -32,7 +32,7 @@ Outcome: completed the current-source comprehensive review and fresh bounded obs
 
 ## Pending work and next action
 
-- U-001 is complete. The report records full file coverage, two low-priority findings, structural checks and five fresh consumer tasks. Runtime sources and protected historical records remain unchanged.
-- Preserve the containing local review commit and publish it to the recorded campaign branch after authentication recovery. Do not retry the unchanged rejected credential or integration writes. GitHub requires a suitable token with Contents read/write access for the canonical repository.
-- Verify remote containment before any further campaign work or commit. Publication and revision acceptance remain separate pending states.
-- Return the findings for the human's revision decision; do not implement repairs, merge or close the campaign automatically.
+- Publish and read back the containing revision-plan checkpoint, then execute V-001 and V-002 in order under the revision plan.
+- Each action closes with source, actual recheck evidence, commit and verified push before the next action.
+- Inspect the complete campaign diff, check the prospective two-parent merge to main, refresh the parent handoff and publish/read back the merge before closure.
+- Preserve closed records, original review evidence and the stopped legacy checkout. No unrelated implementation follows this campaign.
