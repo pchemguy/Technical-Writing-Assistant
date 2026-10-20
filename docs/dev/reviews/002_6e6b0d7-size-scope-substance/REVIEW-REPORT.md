@@ -7,7 +7,7 @@
 - Starting and reviewed source: `6e6b0d7eca36b2db317aaa64cbe55d4aa250cb73`.
 - Working branch: `revision/002_6e6b0d7-size-scope-substance`; creation parent/prospective target: `main`.
 - [Review plan](REVIEW-PLAN.md); [proposed revision plan](REVISION-PLAN.md).
-- State: U-001 source review complete; the user subsequently authorized revision execution, explicitly including level of detail against purpose, scope, substantive content and audience needs. The revision report records current action evidence; baseline observations below are retained.
+- State: review and accepted revision actions complete, including explicit size and level-of-detail assessment against purpose, scope, substantive content and audience needs. The revision report records actual verification and publication/integration limits; baseline observations below are retained.
 - Evidence boundary: inspected current instructions and governing source, with source-level scenario analysis. No new consumer execution, external fact checking or client trial.
 
 The skill already has substantial coverage of this subject. It explicitly checks unnecessary wording, redundant repetition, duplicated passages, overlapping sections, underdevelopment, disproportionate emphasis and reader burden. The capability map goes further than a generic concision rule: its “Unit size and load” dimension asks whether units are fragmented, underdeveloped or overloaded.
@@ -65,7 +65,7 @@ The generic composition route is available from the entry and selected by the ma
 | Bounded correction | Keep composition analysis as the diagnostic owner. Name the objective, explain how to ground it in contribution/development and reading context, and return a proportionate conclusion when requested. Add only the necessary routing and affected-recheck reminders. |
 | Meaning and scope protections | Do not require every focused edit to audit document size. Do not equate repetition with waste, length with overload or shortness with incompleteness. Do not delete essential content or invent missing support. |
 | Objective recheck | Source and later consumer cases distinguish excess, legitimate detail, inadequate development, useful recurrence, excerpt limits and review-only scope; each substantive diagnosis has located evidence and a bounded remedy. |
-| Disposition | Accepted for V-001 through V-004 under the subsequent execution instruction. Current evidence is retained in [REVISION-REPORT.md](REVISION-REPORT.md); original coverage observation remains unchanged. |
+| Disposition | Verified for the accepted clarification under V-001 through V-004. [REVISION-REPORT.md](REVISION-REPORT.md) retains source checks, fixed prompts and actual outputs; original coverage observation remains unchanged. |
 
 The related routing/remedy/verification changes share this cause and are not inflated into separate findings. Existing wordiness, duplication and fidelity safeguards need preservation, not replacement.
 
@@ -138,4 +138,4 @@ The containing assessment/plan commit and its remote readback establish publicat
 
 The proposed plan keeps the diagnostic owner, repairs only the missing explicit connection, and preserves existing semantic safeguards. No new reference/module, forced shortening, broad terminology rewrite, token budget or automatic full-audit requirement is justified.
 
-The review and planning stage is complete. R-001 remains open for the user's decision. No implementation, main merge, installation or campaign closure has occurred.
+The original review/planning checkpoint was followed by user-authorized revision. R-001 now has the verified disposition above. Main integration, installation and campaign closure are not inferred from source revision; their actual state is distinguished in the revision report.
