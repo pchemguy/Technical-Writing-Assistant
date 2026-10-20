@@ -272,12 +272,14 @@ The manager owns mode definitions and selection. Evidence review works within th
 
 Initial assessment means readiness triage only when needed, not the detailed review. Comprehensive review considers every relevant dimension and explains material exclusions or unavailable coverage. Revision changes only what needs repair; a sound structure needs no forced reorganization. Both workflows honor the selected evidence mode and preserve essential content and authorial position. Substantive revision requires existing authority; missing information is not permission to invent it. Revision checks compare changed material with its source and instructions. Findings-only branches instead check their own findings for accuracy and consistency.
 
+Requests to assess document size or level of detail use composition analysis. In composition and comprehensive reviews, include this assessment when relevant to the request and support the conclusion within the inspected boundary. Do not turn an assessment into shortening or summary generation, or expand an unrelated local edit into a whole-document audit.
+
 Shared style and genre guidance supply criteria, not compulsory extra stages. Named steps refer to their corresponding focused modules directly discoverable from the entry point.
 
 | Workflow | Typical sequence | Result |
 |---|---|---|
 | Focused language edit | Brief as needed → language revision → relevant terminology checks → revision check | Revised passage preserving or flagging substantive uncertainties. |
-| Composition audit | Composition analysis → optional composition exploration | Located findings and priorities; rewrite only when requested. |
+| Composition audit | Composition analysis → optional composition exploration | Located findings and priorities, including requested size/detail judgments; rewrite only when requested. |
 | Structural revision | Composition analysis → exploration if needed → structural revision → revision check | Reorganized text with accurate purposes and transitions. |
 | Comprehensive editorial review | Scope and genre conventions → relevant composition, language/style, argument, evidence, and terminology/consistency assessment → consolidation | Located, prioritized findings, reader consequences, remedies, and assessment limits; no automatic rewrite. |
 | Comprehensive draft revision | Revision scope → diagnosis of relevant defects → structure, reasoning, language, and terminology changes as needed within authority → revision check | Revised draft, significant changes, and unresolved substantive questions. |
