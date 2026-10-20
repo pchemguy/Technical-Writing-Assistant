@@ -170,3 +170,11 @@ No live research, paywall/access recovery, external source accuracy, target-clie
 The optional queue contains only R-001. There is no accepted repair plan, and no source change is needed to complete this review. If the user selects revision, retain this baseline finding and perform the bounded wording change plus affected contrast checks under separate revision authority. Otherwise retain the recommendation without treating it as a blocker.
 
 U-001 is complete. Publish and verify the containing report commit on the campaign branch, then await the user's next decision. The review does not close or merge the campaign by implication.
+
+## Closure authorization and finalization
+
+The user requested closure on 2026-10-20 after the published review checkpoint `4d8fc0f0a4968fd7e5174d7fcd584a9968072132`. This authorizes integration of the completed review records into the recorded creation parent, `main`, and return to that branch. It does not accept or implement R-001. The original review scope, observations and evidence above remain the baseline record; earlier references to the review-only stopping boundary describe that checkpoint.
+
+Finalization retains the complete report and raw evidence, with no runtime or governing-source change. R-001 remains an optional, unimplemented precision recommendation; no mandatory repair is outstanding. The bounded current-source structural checks and source-preservation checks are repeated before branch finalization and on the prospective merge. Their scope remains the current package and campaign, excluding closed historical contents; consumer samples are retained observations, not rerun behavioral evidence.
+
+The containing finalization commit is published on `revision/003_b4b1f80-comprehensive-skill-review` before integration. The subsequent explicit two-parent merge records the verified source and target tips, merged-state results and original campaign provenance in its integration summary. Closure requires publication/readback of that merge on `main` and return to the parent branch. After those steps, retain this campaign unchanged and await the user's next objective.

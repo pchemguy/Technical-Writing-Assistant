@@ -1,6 +1,6 @@
 # Project handoff
 
-Checkpoint: comprehensive review U-001 complete for campaign `003_b4b1f80` on 2026-10-20.
+Checkpoint: campaign `003_b4b1f80` closure preparation on 2026-10-20.
 
 ## Workflow and source
 
@@ -13,7 +13,7 @@ Checkpoint: comprehensive review U-001 complete for campaign `003_b4b1f80` on 20
 
 ## Authority and boundary
 
-The user requested “Open and run a comprehensive review campaign”. Review the entire current skill and current support documents, execute bounded local checks and fresh consumer samples, and publish findings. Stop at the published review report. Repairs, revision execution, installation, release and main integration are not activated.
+The user requested “Open and run a comprehensive review campaign”. Review the entire current skill and current support documents, execute bounded local checks and fresh consumer samples, and publish findings. The review stopped at its published report. The user subsequently requested “close it” on 2026-10-20, authorizing finalization, explicit integration into main, publication and return. Repairs, revision execution, installation and release remain outside scope.
 
 Campaigns 001 and 002 are closed and preserved. Their closure and latest main publication were confirmed through Git before this campaign. No suspended parent implementation exists. Do not routinely read or validate their historical contents. The separate stopped legacy checkout remains untouched.
 
@@ -21,4 +21,4 @@ Campaigns 001 and 002 are closed and preserved. Their closure and latest main pu
 
 Opening checkpoint `0b52ad63448f65e0ffb5a4956dc275145f7a3cbd` was published and read back before review. U-001 is complete: no confirmed material defect; R-001 is one low-priority optional precision recommendation. All runtime resources and current interfaces were inspected, two independent source assessments retained, and thirteen sampled responses in three fresh contexts met their task criteria. Offline package/current-link checks and selected negative fixtures passed. Source and closed records remain unchanged.
 
-Commit, publish and read back the containing report checkpoint. After successful publication, await the user’s revision or closure decision on this campaign branch. No repair, main merge or installation is pending by implication. Inspect Git for publication after this named snapshot before replaying its pending effect. Behavioral evidence remains limited to these samples; no universal or target-client verification is claimed.
+Review checkpoint `4d8fc0f0a4968fd7e5174d7fcd584a9968072132` is published and verified. Publish/read back this closure-preparation checkpoint, then explicitly merge its verified tip into the refreshed main, reconcile this handoff to the returned parent context, verify and publish the merge. Retain R-001 as optional and unimplemented. After verified main publication, close the campaign and await the next user objective. Behavioral evidence remains limited to these samples; no universal or target-client verification is claimed.
