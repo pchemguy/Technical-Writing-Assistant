@@ -7,7 +7,7 @@
 - Published review/plan checkpoint: `986e547a3e2cad1c4de5ea0488d4fab3bd263dc5`.
 - Working branch: `revision/002_6e6b0d7-size-scope-substance`; creation parent/prospective target: `main`.
 - Authorization: user requested execution on 2026-10-20, explicitly including level of detail against purpose, scope, substantive content and audience needs.
-- State: V-001 and V-002 implemented and source-checked; V-003 and V-004 pending. R-001 remains Accepted, not yet verified by consumer cases.
+- State: V-001 through V-003 implemented and source-checked; V-004 fresh cases/final verification pending. R-001 is Revised, not yet Verified.
 - No installation, external research or behavioral improvement is claimed.
 
 ## Action evidence
@@ -16,7 +16,7 @@
 | --- | --- | --- | --- |
 | V-001 | Composition analysis, SPEC and capability-map criterion; accepted plan and entry continuity. | Existing package validator exit 0; whitespace check passed. Canonical question explicitly includes both size and explanatory depth and all four user-specified grounds. | Revised; local source acceptance passed. |
 | V-002 | Entry composition route, manager review selection/result, and mirrored map guidance. | Package validator exit 0; all 17 recipe rows match; whitespace passed. Caller and diagnostic-owner scope inspected. | Revised; source routing acceptance passed. |
-| V-003 | Pending repair/comparison changes. | Not run. | Pending. |
+| V-003 | Structural repair and revision-check steps now carry diagnosed size/detail needs into bounded repair and comparison. | Affected owner/caller source compared; package validator exit 0; whitespace passed. | Revised; source acceptance passed. |
 | V-004 | Pending fresh cases and final review/checks. | Not run. | Pending. |
 
 ## V-001 source assessment
@@ -35,9 +35,17 @@ The entry now names size and level of detail in its composition route. The manag
 
 Inspected the entry-to-manager/diagnostic-owner interfaces and mirrored the changed manager guidance/recipe in CAPABILITY_MAP. A direct row comparison found all 17 recipes equal. The APA validator and whitespace check passed. Consumer routing/effect observations remain reserved for V-004.
 
+## V-003 source assessment
+
+Structural revision now names the repair choices for a diagnosed size/detail problem: trim or consolidate redundant treatment, redistribute detail or develop supported essentials, retaining useful recurrence and flagging unavailable substance. Existing protection of reasoning, quantities, caveats, citations and requirements remains in the same step. Language revision and draft development retain their existing ownership; no new permission to remove meaning or invent information is created.
+
+Revision check now rechecks the diagnosed appropriateness and affected development/recurrence when size or detail was changed. Fewer words alone do not establish success. The same procedure still reuses prior diagnoses and examines only changed material and consequential dependencies. Both sides agree with the composition owner; no blanket document audit is added.
+
+The APA package validator and whitespace checks passed. No changes to style, outline or genre guidance were needed at this action. Fresh observations remain pending V-004.
+
 ## Persistence
 
-Remote readback of the review/plan branch matched `986e547a3e2cad1c4de5ea0488d4fab3bd263dc5` before source execution; main remained at the original baseline. V-001 commit `646f4a9ac56caea2d20a44b6be783a7c913f7835` was published and read back before V-002. The containing V-002 commit identifies this source/evidence checkpoint; publish/read it back before V-003. No predicted self-SHA is embedded.
+Remote readback of the review/plan branch matched `986e547a3e2cad1c4de5ea0488d4fab3bd263dc5` before source execution; main remained at the original baseline. V-001 commit `646f4a9ac56caea2d20a44b6be783a7c913f7835` was published and read back before V-002. V-002 commit `e6db66772cd3db512bfbfc4365f751b18bd3605d` was published and read back before V-003. The containing V-003 commit identifies this source/evidence checkpoint; publish/read it back before V-004. No predicted self-SHA is embedded.
 
 Subsequent action results and actual publication identities will be retained here. Main integration and closure are distinct from action publication.
 
