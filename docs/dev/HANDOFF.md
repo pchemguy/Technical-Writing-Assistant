@@ -1,6 +1,6 @@
 # Project handoff
 
-Checkpoint: campaign 002_6e6b0d7 entry; subject review and revision planning.
+Checkpoint: campaign 002_6e6b0d7 subject review complete; revision plan proposed.
 The containing commit identifies this snapshot. Recover subsequent work from the active records and Git.
 
 Outcome: prior campaign 001 is integrated and published on main at `6e6b0d7eca36b2db317aaa64cbe55d4aa250cb73`. Its records remain closed and unchanged. This new campaign concerns the skill's assessment of document size relative to scope and substance.
@@ -9,7 +9,7 @@ Outcome: prior campaign 001 is integrated and published on main at `6e6b0d7eca36
 
 - Workflow/stage/owner: new review/revision campaign, comprehensive subject review and proposed revision planning; SDD Manager coordinates Technical Writing Assistant and Agent Package Author criteria.
 - Governing sources: [SPEC.md](SPEC.md), [CAPABILITY_MAP.md](CAPABILITY_MAP.md), [PLAN.md](PLAN.md).
-- Active record: [REVIEW-PLAN.md](reviews/002_6e6b0d7-size-scope-substance/REVIEW-PLAN.md). REVIEW-REPORT.md and REVISION-PLAN.md are planned outputs.
+- Active records: [REVIEW-PLAN.md](reviews/002_6e6b0d7-size-scope-substance/REVIEW-PLAN.md), [REVIEW-REPORT.md](reviews/002_6e6b0d7-size-scope-substance/REVIEW-REPORT.md) and [REVISION-PLAN.md](reviews/002_6e6b0d7-size-scope-substance/REVISION-PLAN.md).
 - Runtime entry: [SKILL.md](../../technical-writing-assistant/SKILL.md).
 - Execution host: Linux. Standard reporting; Minimal and Explicit remain available.
 
@@ -30,6 +30,7 @@ Outcome: prior campaign 001 is integrated and published on main at `6e6b0d7eca36
 
 ## Pending work
 
-- Publish/read back the containing opening checkpoint before U-001.
-- Inspect current coverage, explain actual gaps and adequate safeguards, and prepare a bounded revision plan with objective rechecks.
-- Publish the completed review/planning checkpoint and return for the user's revision decision. Do not implement or merge.
+- Opening checkpoint df6774d3a6a33fca5342c457309b9c5460752b0a was published/read back before U-001.
+- Subject review is complete: existing duplication, concision and development coverage is substantial. One consolidated recommendation, R-001, makes the overall proportionality judgment explicit; its impact has not been behaviorally measured.
+- Four revision actions and ten acceptance scenarios are proposed; none is implemented or automatically accepted. No runtime/governing-source or closed-record change occurred.
+- Publish/read back the containing assessment/plan checkpoint, then return for the user's revision decision. Do not implement, merge or close the campaign.
