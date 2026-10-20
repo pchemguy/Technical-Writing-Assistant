@@ -134,13 +134,14 @@ Detailed compositional analysis examines small, fragmented, underdeveloped, or o
 | Sentence | Fragmentation, overload, completeness, information order, emphasis, ambiguous references, excessive nesting, interruptions, and logical connections. |
 | Paragraph | A coherent controlling idea; sound topic sentences accurately reflecting contents; adequate development; size and density; sentence sequence; transitions; closure. |
 | Section | Clear purpose, meaningful boundaries, hierarchy, grouping, proportion, heading accuracy, internal progression, and transitions between sections. |
-| Document | Overall trajectory, continuity, prerequisites, distribution of material, redundancy, balance, openings and conclusions, navigation, and integration of examples, lists, tables, figures, equations, and quotations. |
+| Document | Overall extent and level of detail, trajectory, continuity, prerequisites, distribution of material, redundancy, balance, openings and conclusions, navigation, and integration of examples, lists, tables, figures, equations, and quotations. |
 
 Across these levels, examine logical and semantic flow: missing steps, contradictions, scope shifts, topic drift, unexplained introductions, abrupt reappearances, and the burden placed on readers.
 
 | Dimension | Diagnostic questions |
 |---|---|
 | Unit size and load | Is a unit fragmented, underdeveloped, or overloaded? Would combining, splitting, expanding, or relocating improve it? |
+| Document size and level of detail | Are overall and section extent and explanatory depth justified by purpose, scope, substantive content, audience needs, and genre? Which elaboration, duplication, disproportionate detail, or missing development affects that judgment? Preserve recurrence and depth that serve precision, evidence, safe use, independent reading, or navigation. |
 | Paragraph focus | Does the paragraph have a controlling idea? Are competing topics, digressions, or misplaced content present? |
 | Topic sentences | Does the topic sentence accurately reflect content, scope, and emphasis? Does the paragraph develop the announced idea? |
 | Internal development | Are assertions sufficiently explained, supported, exemplified, qualified, or interpreted? Are there unsupported jumps or premature conclusions? |
@@ -160,7 +161,7 @@ Across these levels, examine logical and semantic flow: missing steps, contradic
 
 Sound topic sentences in each expository paragraph are a strong default. Assess accuracy as well as presence: a polished topic sentence does not repair a paragraph that develops a different idea. A justified exception, such as a brief transitional paragraph, must serve the composition rather than excuse an unfocused paragraph.
 
-Length is a signal to investigate, not proof of a defect. A grammatically complete sentence can be conceptually fragmented; a long paragraph can remain coherent; a short section can be appropriate.
+Length is a signal to investigate, not proof of a defect. A grammatically complete sentence can be conceptually fragmented; a long paragraph can remain coherent; a short section can be appropriate. When size or detail is within the requested coverage, return a reasoned overall assessment with its basis and inspection limits, including justified retention, excess, insufficient development, or mixed needs as applicable. Shortening and expansion are not automatic improvements; no separate score or formal report is required.
 
 Each actionable finding identifies its location and problem, the reader consequence, a proposed remedy, and any meaning implications or author decision. Distinguish cosmetic awkwardness from a structural defect or substantive gap.
 
@@ -271,12 +272,14 @@ The manager owns mode definitions and selection. Evidence review works within th
 
 Initial assessment means readiness triage only when needed, not the detailed review. Comprehensive review considers every relevant dimension and explains material exclusions or unavailable coverage. Revision changes only what needs repair; a sound structure needs no forced reorganization. Both workflows honor the selected evidence mode and preserve essential content and authorial position. Substantive revision requires existing authority; missing information is not permission to invent it. Revision checks compare changed material with its source and instructions. Findings-only branches instead check their own findings for accuracy and consistency.
 
+Requests to assess document size or level of detail use composition analysis. In composition and comprehensive reviews, include this assessment when relevant to the request and support the conclusion within the inspected boundary. Do not turn an assessment into shortening or summary generation, or expand an unrelated local edit into a whole-document audit.
+
 Shared style and genre guidance supply criteria, not compulsory extra stages. Named steps refer to their corresponding focused modules directly discoverable from the entry point.
 
 | Workflow | Typical sequence | Result |
 |---|---|---|
 | Focused language edit | Brief as needed → language revision → relevant terminology checks → revision check | Revised passage preserving or flagging substantive uncertainties. |
-| Composition audit | Composition analysis → optional composition exploration | Located findings and priorities; rewrite only when requested. |
+| Composition audit | Composition analysis → optional composition exploration | Located findings and priorities, including requested size/detail judgments; rewrite only when requested. |
 | Structural revision | Composition analysis → exploration if needed → structural revision → revision check | Reorganized text with accurate purposes and transitions. |
 | Comprehensive editorial review | Scope and genre conventions → relevant composition, language/style, argument, evidence, and terminology/consistency assessment → consolidation | Located, prioritized findings, reader consequences, remedies, and assessment limits; no automatic rewrite. |
 | Comprehensive draft revision | Revision scope → diagnosis of relevant defects → structure, reasoning, language, and terminology changes as needed within authority → revision check | Revised draft, significant changes, and unresolved substantive questions. |
