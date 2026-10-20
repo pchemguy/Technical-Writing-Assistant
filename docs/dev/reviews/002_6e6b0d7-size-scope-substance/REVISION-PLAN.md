@@ -1,14 +1,14 @@
-# Proposed revision plan: document proportionality
+# Revision plan: document proportionality
 
 ## Campaign and decision state
 
 - Campaign: `002_6e6b0d7`; baseline: `6e6b0d7eca36b2db317aaa64cbe55d4aa250cb73`.
 - Branch: `revision/002_6e6b0d7-size-scope-substance`; creation parent/prospective target: `main`.
 - [Review plan](REVIEW-PLAN.md); [review report](REVIEW-REPORT.md).
-- User authorization: comprehensive subject review and revision planning, 2026-10-20.
-- State: proposed; no source implementation is authorized by this checkpoint.
-- Finding disposition: R-001 is proposed for acceptance. No finding is silently marked accepted, rejected, deferred or verified. No additional canonical defect was found.
-- REVISION-REPORT.md will be created only if execution is authorized.
+- User authorization: comprehensive review/planning, then “Proceed to revision” on 2026-10-20. The execution instruction explicitly requires assessment of level of detail against purpose, scope, substantive content and audience needs.
+- State: accepted for execution under the subsequent user instruction; action results are recorded in REVISION-REPORT.md.
+- Finding disposition: R-001 accepted as a coverage clarification. It is not recast as a demonstrated behavioral defect. No other finding is deferred or rejected.
+- [Revision report](REVISION-REPORT.md) records implementation and actual checks.
 
 ## Intended outcome
 
@@ -32,7 +32,7 @@ This is operative wording to consider, not a new universal template or a require
 | Style guidelines and genre modules | Recheck compatibility; change only if a concrete inconsistency is found. | Existing concision and preservation rules already work. |
 | PLAN and README | Verify continued truthfulness; no change expected. | The module implementation order and product scope do not need a new campaign narrative. |
 
-All governing/runtime amendments above remain proposals. If accepted execution exposes a genuine new requirement or design decision, settle it through the owning workflow before dependent changes; do not use this campaign plan as a substitute SPEC. No executable task list is invented for this focused maintenance.
+The user accepted the proposed governing/runtime amendments for execution. If execution exposes a genuine new requirement or design decision, settle it through the owning workflow before dependent changes; do not use this campaign plan as a substitute SPEC. No executable task list is invented for this focused maintenance.
 
 ## Ordered actions
 
@@ -77,6 +77,6 @@ No baseline-versus-candidate comparison is required to claim only observed candi
 
 ## Completion and stop
 
-This requested stage stops at the published review and proposed revision plan. Runtime files, SPEC/map, closed records, installation and main remain unchanged.
+The original request stopped at the published review and proposed plan. The subsequent user instruction authorizes V-001 through V-004, with both size and level of detail assessed explicitly. Closed records and unrelated work remain protected; installation is outside scope.
 
-After a later execution instruction, retain this campaign identity, establish execution continuity and create REVISION-REPORT.md. Each accepted action has its normal commit/push/readback boundary. Final integration and campaign closure require the eligible authorized merge and target publication; they are not supplied by this planning request.
+Retain this campaign identity and execution continuity. Each action has its normal commit/push/readback boundary. Final integration and campaign closure require the eligible authorized merge and target publication; a completed action or local merge alone does not establish them.

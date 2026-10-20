@@ -7,7 +7,7 @@
 - Starting and reviewed source: `6e6b0d7eca36b2db317aaa64cbe55d4aa250cb73`.
 - Working branch: `revision/002_6e6b0d7-size-scope-substance`; creation parent/prospective target: `main`.
 - [Review plan](REVIEW-PLAN.md); [proposed revision plan](REVISION-PLAN.md).
-- State: U-001 source review complete; revision plan proposed, not implemented or accepted.
+- State: U-001 source review complete; the user subsequently authorized revision execution, explicitly including level of detail against purpose, scope, substantive content and audience needs. The revision report records current action evidence; baseline observations below are retained.
 - Evidence boundary: inspected current instructions and governing source, with source-level scenario analysis. No new consumer execution, external fact checking or client trial.
 
 The skill already has substantial coverage of this subject. It explicitly checks unnecessary wording, redundant repetition, duplicated passages, overlapping sections, underdevelopment, disproportionate emphasis and reader burden. The capability map goes further than a generic concision rule: its “Unit size and load” dimension asks whether units are fragmented, underdeveloped or overloaded.
@@ -65,7 +65,7 @@ The generic composition route is available from the entry and selected by the ma
 | Bounded correction | Keep composition analysis as the diagnostic owner. Name the objective, explain how to ground it in contribution/development and reading context, and return a proportionate conclusion when requested. Add only the necessary routing and affected-recheck reminders. |
 | Meaning and scope protections | Do not require every focused edit to audit document size. Do not equate repetition with waste, length with overload or shortness with incompleteness. Do not delete essential content or invent missing support. |
 | Objective recheck | Source and later consumer cases distinguish excess, legitimate detail, inadequate development, useful recurrence, excerpt limits and review-only scope; each substantive diagnosis has located evidence and a bounded remedy. |
-| Disposition | Open recommendation; addressed by proposed V-001 through V-004. User requested planning, not execution. |
+| Disposition | Accepted for V-001 through V-004 under the subsequent execution instruction. Current evidence is retained in [REVISION-REPORT.md](REVISION-REPORT.md); original coverage observation remains unchanged. |
 
 The related routing/remedy/verification changes share this cause and are not inflated into separate findings. Existing wordiness, duplication and fidelity safeguards need preservation, not replacement.
 
