@@ -1,0 +1,38 @@
+{
+  "baseline": "b4b1f80b375c9bb9811eae9a1d513c4580f00025",
+  "runtime_files": 23,
+  "runtime_markdown_whitespace_words": 15138,
+  "recipes": 17,
+  "recipe_rows_equal": true,
+  "positive": {
+    "references": 20,
+    "local_links": 173,
+    "errors": [],
+    "selected_markdown_files": 36,
+    "existence_only_placeholders": [
+      "docs/dev/REVIEW.md",
+      "docs/dev/REVISION_REVIEW.md",
+      "docs/dev/revision_plans/REVISION_PLAN_1cc08a2.md"
+    ]
+  },
+  "missing_resource_negative": {
+    "error_count": 8,
+    "errors": [
+      "Routing mismatch: missing=[], extra=['writing-brief.md']",
+      "Capability-map references disagree with package inventory",
+      "Missing link target: technical-writing-assistant/SKILL.md -> references/writing-brief.md",
+      "Missing link target: technical-writing-assistant/references/composition-exploration.md -> writing-brief.md",
+      "Missing link target: technical-writing-assistant/references/draft-development.md -> writing-brief.md",
+      "Missing link target: technical-writing-assistant/references/manager.md -> writing-brief.md",
+      "Missing link target: technical-writing-assistant/references/material-assessment.md -> writing-brief.md",
+      "Missing link target: technical-writing-assistant/references/outline-context-exploration.md -> writing-brief.md"
+    ]
+  },
+  "broken_anchor_negative": {
+    "error_count": 1,
+    "errors": [
+      "Missing anchor: technical-writing-assistant/SKILL.md -> references/manager.md#nonexistent-campaign003-anchor"
+    ]
+  },
+  "protected_source_diff": "unchanged"
+}

@@ -1,12 +1,12 @@
 # Project handoff
 
-Checkpoint: opening comprehensive review campaign `003_b4b1f80` on 2026-10-20.
+Checkpoint: comprehensive review U-001 complete for campaign `003_b4b1f80` on 2026-10-20.
 
 ## Workflow and source
 
 - Coordinator: SDD Manager; comprehensive review U-001, Standard reporting, Linux/Bash host.
 - Governing inputs: [SPEC.md](SPEC.md), [CAPABILITY_MAP.md](CAPABILITY_MAP.md), [PLAN.md](PLAN.md), root AGENTS.md.
-- Active plan: [REVIEW-PLAN.md](reviews/003_b4b1f80-comprehensive-skill-review/REVIEW-PLAN.md).
+- Active records: [REVIEW-PLAN.md](reviews/003_b4b1f80-comprehensive-skill-review/REVIEW-PLAN.md) and [REVIEW-REPORT.md](reviews/003_b4b1f80-comprehensive-skill-review/REVIEW-REPORT.md).
 - Source and creation parent: published `main` at `b4b1f80b375c9bb9811eae9a1d513c4580f00025`; runtime tree `b1d4178992fd77054cf9dffcfc5f576e01718a71`.
 - Branch: `revision/003_b4b1f80-comprehensive-skill-review`; prospective return target: `main`.
 - Repository: https://github.com/pchemguy/Technical-Writing-Assistant.
@@ -19,4 +19,6 @@ Campaigns 001 and 002 are closed and preserved. Their closure and latest main pu
 
 ## Current state and next action
 
-The opening plan and continuity checkpoint are prepared. Commit, publish and verify this checkpoint before U-001. Then inspect every runtime resource, assess handoffs and current documentation alignment, run fresh isolated tasks and package checks, and consolidate the detailed report. Record observed evidence and limitations; do not treat inspection or sampled success as universal behavior.
+Opening checkpoint `0b52ad63448f65e0ffb5a4956dc275145f7a3cbd` was published and read back before review. U-001 is complete: no confirmed material defect; R-001 is one low-priority optional precision recommendation. All runtime resources and current interfaces were inspected, two independent source assessments retained, and thirteen sampled responses in three fresh contexts met their task criteria. Offline package/current-link checks and selected negative fixtures passed. Source and closed records remain unchanged.
+
+Commit, publish and read back the containing report checkpoint. After successful publication, await the user’s revision or closure decision on this campaign branch. No repair, main merge or installation is pending by implication. Inspect Git for publication after this named snapshot before replaying its pending effect. Behavioral evidence remains limited to these samples; no universal or target-client verification is claimed.
