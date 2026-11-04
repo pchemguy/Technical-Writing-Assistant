@@ -1,0 +1,311 @@
+{
+  "current_source_fixture": {
+    "errors": [],
+    "link_count": 221,
+    "reference_count": 20,
+    "included_root_docs": [
+      "AGENTS.md",
+      "AI_DISCLOSURE.md",
+      "README.md",
+      "SDD-MANAGER.md",
+      "SKILL_DISCOVERY_PROTOCOL.md",
+      "WINDOWS_SHELL_POLICY.md"
+    ],
+    "included_dev_docs": [
+      "docs/dev/CAPABILITY_MAP.md",
+      "docs/dev/HANDOFF.md",
+      "docs/dev/PLAN.md",
+      "docs/dev/SPEC.md",
+      "docs/dev/reviews/006_f2000ee-comprehensive-skill-review/REVIEW-PLAN.md",
+      "docs/dev/reviews/006_f2000ee-comprehensive-skill-review/REVIEW-REPORT.md",
+      "docs/dev/reviews/006_f2000ee-comprehensive-skill-review/evidence/check_current.py",
+      "docs/dev/reviews/006_f2000ee-comprehensive-skill-review/evidence/consumer-a.md",
+      "docs/dev/reviews/006_f2000ee-comprehensive-skill-review/evidence/consumer-b.md",
+      "docs/dev/reviews/006_f2000ee-comprehensive-skill-review/independent/consumer-assessment.md",
+      "docs/dev/reviews/006_f2000ee-comprehensive-skill-review/independent/editorial.md",
+      "docs/dev/reviews/006_f2000ee-comprehensive-skill-review/independent/interfaces.md"
+    ],
+    "historical_existence_placeholders": [
+      "docs/dev/REVIEW.md",
+      "docs/dev/REVISION_REVIEW.md",
+      "docs/dev/revision_plans/REVISION_PLAN_1cc08a2.md"
+    ]
+  },
+  "negative_fixtures": {
+    "missing_reference": [
+      "Routing mismatch: missing=[], extra=['language-revision.md']",
+      "Capability-map references disagree with package inventory",
+      "Missing link target: technical-writing-assistant\\references\\professional-writing.md -> language-revision.md",
+      "Missing link target: technical-writing-assistant\\references\\software-documentation.md -> language-revision.md",
+      "Missing link target: technical-writing-assistant\\references\\structural-revision.md -> language-revision.md",
+      "Missing link target: technical-writing-assistant\\references\\style-guidelines.md -> language-revision.md",
+      "Missing link target: technical-writing-assistant\\SKILL.md -> references/language-revision.md"
+    ],
+    "broken_anchor": [
+      "Missing anchor: technical-writing-assistant\\SKILL.md -> references/manager.md#missing-anchor"
+    ],
+    "escaping_link": [
+      "Link escapes repository: technical-writing-assistant\\SKILL.md -> ../../outside.md"
+    ]
+  },
+  "apa_checks": {
+    "validate_skill_returncode": 0,
+    "validate_skill_stdout": "",
+    "validate_skill_stderr": "",
+    "inspect_package_returncode": 0,
+    "inspect_package_stdout": "PACKAGE: skill\n  references: 20\n  assets: 1\nVALIDATION: errors: 0, warnings: 0\nRUNTIME: not verified by inventory"
+  },
+  "routing_and_recipes": {
+    "actual_reference_count": 20,
+    "routed_in_skill_count": 20,
+    "skill_table_row_count": 19,
+    "map_decomposition_row_count": 20,
+    "manager_recipe_count": 17,
+    "map_recipe_count": 17,
+    "recipes_identical": true,
+    "recipe_names": [
+      "Focused language edit",
+      "Composition audit",
+      "Structural revision",
+      "Comprehensive editorial review",
+      "Comprehensive draft revision",
+      "Bullets or brainstorming to prose",
+      "Argument strengthening",
+      "Fact-checking and evidence repair",
+      "Audience or genre transformation",
+      "Concision or executive summary",
+      "Software documentation review",
+      "Scientific manuscript revision",
+      "Generate an outline or map",
+      "Review an outline or map",
+      "Repair an outline or map",
+      "Derive a specialized map",
+      "Outline to developed text"
+    ]
+  },
+  "file_metrics": {
+    "technical-writing-assistant/SKILL.md": {
+      "lines": 52,
+      "words": 674,
+      "bytes": 5829
+    },
+    "technical-writing-assistant/references/argument-review.md": {
+      "lines": 35,
+      "words": 557,
+      "bytes": 4322
+    },
+    "technical-writing-assistant/references/composition-analysis.md": {
+      "lines": 57,
+      "words": 1032,
+      "bytes": 7906
+    },
+    "technical-writing-assistant/references/composition-exploration.md": {
+      "lines": 34,
+      "words": 488,
+      "bytes": 3734
+    },
+    "technical-writing-assistant/references/draft-development.md": {
+      "lines": 42,
+      "words": 599,
+      "bytes": 4498
+    },
+    "technical-writing-assistant/references/evidence-review.md": {
+      "lines": 38,
+      "words": 684,
+      "bytes": 5174
+    },
+    "technical-writing-assistant/references/language-revision.md": {
+      "lines": 36,
+      "words": 516,
+      "bytes": 3977
+    },
+    "technical-writing-assistant/references/manager.md": {
+      "lines": 128,
+      "words": 2066,
+      "bytes": 15881
+    },
+    "technical-writing-assistant/references/material-assessment.md": {
+      "lines": 34,
+      "words": 461,
+      "bytes": 3476
+    },
+    "technical-writing-assistant/references/outline-context-exploration.md": {
+      "lines": 37,
+      "words": 564,
+      "bytes": 4286
+    },
+    "technical-writing-assistant/references/outline-generation.md": {
+      "lines": 35,
+      "words": 528,
+      "bytes": 3973
+    },
+    "technical-writing-assistant/references/outline-review.md": {
+      "lines": 77,
+      "words": 1184,
+      "bytes": 9116
+    },
+    "technical-writing-assistant/references/professional-writing.md": {
+      "lines": 42,
+      "words": 557,
+      "bytes": 4248
+    },
+    "technical-writing-assistant/references/revision-check.md": {
+      "lines": 42,
+      "words": 791,
+      "bytes": 6134
+    },
+    "technical-writing-assistant/references/scientific-writing.md": {
+      "lines": 36,
+      "words": 512,
+      "bytes": 4052
+    },
+    "technical-writing-assistant/references/software-documentation.md": {
+      "lines": 46,
+      "words": 660,
+      "bytes": 5219
+    },
+    "technical-writing-assistant/references/source-research.md": {
+      "lines": 37,
+      "words": 652,
+      "bytes": 4984
+    },
+    "technical-writing-assistant/references/structural-revision.md": {
+      "lines": 35,
+      "words": 546,
+      "bytes": 4239
+    },
+    "technical-writing-assistant/references/style-guidelines.md": {
+      "lines": 92,
+      "words": 1168,
+      "bytes": 8893
+    },
+    "technical-writing-assistant/references/terminology-consistency.md": {
+      "lines": 36,
+      "words": 493,
+      "bytes": 3874
+    },
+    "technical-writing-assistant/references/writing-brief.md": {
+      "lines": 34,
+      "words": 480,
+      "bytes": 3598
+    },
+    "technical-writing-assistant/agents/openai.yaml": {
+      "lines": 9,
+      "words": 59,
+      "bytes": 534
+    },
+    "technical-writing-assistant/assets/icon.svg": {
+      "lines": 6,
+      "words": 49,
+      "bytes": 603
+    },
+    "tools/check_package.py": {
+      "lines": 127,
+      "words": 556,
+      "bytes": 6178
+    },
+    "AGENTS.md": {
+      "lines": 32,
+      "words": 314,
+      "bytes": 2608
+    },
+    "AI_DISCLOSURE.md": {
+      "lines": 13,
+      "words": 143,
+      "bytes": 1205
+    },
+    "README.md": {
+      "lines": 60,
+      "words": 567,
+      "bytes": 4775
+    },
+    "SDD-MANAGER.md": {
+      "lines": 5,
+      "words": 85,
+      "bytes": 688
+    },
+    "SKILL_DISCOVERY_PROTOCOL.md": {
+      "lines": 78,
+      "words": 379,
+      "bytes": 3029
+    },
+    "WINDOWS_SHELL_POLICY.md": {
+      "lines": 66,
+      "words": 633,
+      "bytes": 4273
+    },
+    "docs/dev/CAPABILITY_MAP.md": {
+      "lines": 308,
+      "words": 5502,
+      "bytes": 42723
+    },
+    "docs/dev/HANDOFF.md": {
+      "lines": 25,
+      "words": 236,
+      "bytes": 3093
+    },
+    "docs/dev/PLAN.md": {
+      "lines": 45,
+      "words": 333,
+      "bytes": 2570
+    },
+    "docs/dev/SPEC.md": {
+      "lines": 27,
+      "words": 628,
+      "bytes": 5106
+    },
+    "docs/dev/reviews/006_f2000ee-comprehensive-skill-review/REVIEW-PLAN.md": {
+      "lines": 48,
+      "words": 689,
+      "bytes": 5609
+    },
+    "docs/dev/reviews/006_f2000ee-comprehensive-skill-review/REVIEW-REPORT.md": {
+      "lines": 142,
+      "words": 3916,
+      "bytes": 34371
+    },
+    "docs/dev/reviews/006_f2000ee-comprehensive-skill-review/evidence/check_current.py": {
+      "lines": 257,
+      "words": 728,
+      "bytes": 10600
+    },
+    "docs/dev/reviews/006_f2000ee-comprehensive-skill-review/evidence/consumer-a.md": {
+      "lines": 251,
+      "words": 3641,
+      "bytes": 26702
+    },
+    "docs/dev/reviews/006_f2000ee-comprehensive-skill-review/evidence/consumer-b.md": {
+      "lines": 216,
+      "words": 2630,
+      "bytes": 18951
+    },
+    "docs/dev/reviews/006_f2000ee-comprehensive-skill-review/independent/consumer-assessment.md": {
+      "lines": 71,
+      "words": 1769,
+      "bytes": 14012
+    },
+    "docs/dev/reviews/006_f2000ee-comprehensive-skill-review/independent/editorial.md": {
+      "lines": 101,
+      "words": 2226,
+      "bytes": 20020
+    },
+    "docs/dev/reviews/006_f2000ee-comprehensive-skill-review/independent/interfaces.md": {
+      "lines": 147,
+      "words": 2252,
+      "bytes": 21034
+    }
+  },
+  "whitespace_issues": [
+    "AI_DISCLOSURE.md:10: trailing whitespace",
+    "AI_DISCLOSURE.md:12: trailing whitespace",
+    "README.md:2: trailing whitespace"
+  ],
+  "icon_render": {
+    "rendered": true,
+    "engine": "PySide6.QtSvg.QSvgRenderer",
+    "outputs": {
+      "128x128": "docs/dev/reviews/006_f2000ee-comprehensive-skill-review/evidence/icon-128.png",
+      "32x32": "docs/dev/reviews/006_f2000ee-comprehensive-skill-review/evidence/icon-32.png"
+    }
+  }
+}
