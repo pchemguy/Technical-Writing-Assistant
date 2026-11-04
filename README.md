@@ -1,5 +1,7 @@
 ---
-url: https://chatgpt.com/c/6abcb9c4-7980-83eb-85b2-e910c0fdf297
+urls: 
+  - https://chatgpt.com/c/6abcb9c4-7980-83eb-85b2-e910c0fdf297
+  - https://chatgpt.com/c/6abe25da-8604-83ea-82be-c9c4f1a86eb8
 ---
 
 # Technical Writing Assistant
