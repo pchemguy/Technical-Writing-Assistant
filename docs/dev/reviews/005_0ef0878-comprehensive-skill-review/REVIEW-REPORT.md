@@ -6,7 +6,7 @@ The current skill has no confirmed source defect within the inspected boundary. 
 
 - Campaign: `005_0ef0878`; directory `005_0ef0878-comprehensive-skill-review`; date 2026-11-04.
 - Starting and exact reviewed source: published main at `0ef087801f826d749c791f4116012930dcddfce7`.
-- Runtime tree: `b1d4178992fd77054cf9dffcfc5f576e01718a71`, unchanged throughout this campaign.
+- Runtime tree: `b1d4178992fd77054cf9dffcfc5f576e01718a71`, unchanged throughout review U-001; subsequent revision evidence is recorded separately.
 - Branch: `revision/005_0ef0878-comprehensive-skill-review`; creation parent and potential later integration target: `main`.
 - Opening checkpoint: `139edc750f3caa543133306602101667f9c4b108`, published/read back before U-001.
 - Authority and criteria: [REVIEW-PLAN.md](REVIEW-PLAN.md). User requested a comprehensive review campaign; source repair, installation, release, merge and closure are not activated.
@@ -144,7 +144,7 @@ Consumers loaded the entry first and reported selecting relevant references. The
 | Source relationship | outline-review.md, Inputs and coverage, separates required criteria from preferences; validation step 6 requires a stated basis for partial outcomes. These instructions already support the needed distinction |
 | Bounded correction / owner | Correct the sampled review's topic-presence label to satisfied; separately state that explanatory adequacy is not assessable or propose development under explicit inferred criteria. Do not invent purpose content |
 | Objective recheck | Contrast a bare outline whose topics are present with a brief explicitly requiring per-node explanations; distinguish presence, development quality and unavailable source support |
-| Current status | Observed only. Original output retained. No runtime revision accepted or implemented; one sample does not establish an instruction-level cause |
+| Current status | Resolved within V-001: corrected derivative, bounded examples and fresh topic/content contrasts verified; original output retained. See [REVISION-REPORT.md](REVISION-REPORT.md). This does not establish a general reliability improvement |
 
 ## R-002 — Consolidate one recovery defect across its criterion bases
 
@@ -156,7 +156,7 @@ Consumers loaded the entry first and reported selecting relevant references. The
 | Source relationship | outline-review.md, Outputs and repairs: “report it once with its editorial consequence and criterion basis rather than in duplicate lists.” Manager also requires consolidation by cause/location |
 | Bounded correction / owner | One canonical recovery finding should carry both source-fidelity and coverage bases. Retain the distinct missing-token and unavailable-timing assessments |
 | Objective recheck | Review an artifact where one contradiction fails several criteria; preserve all criterion bases while reporting one cause/remedy, alongside distinct issues |
-| Current status | Observed only. No corrected sample was substituted, and no blanket source procedure change is justified without further evidence |
+| Current status | Resolved within V-001: derived correction and fresh consolidation/distinct-defect contrasts verified; original output retained. See [REVISION-REPORT.md](REVISION-REPORT.md). No blanket procedure rewrite or universal success claim |
 
 ## Structural, presentation and preservation checks
 
@@ -184,3 +184,7 @@ Source review covers every runtime resource, but the ten tasks do not execute al
 R-001 and R-002 concern one observed response. The existing instructions already distinguish coverage from evidence limitations and require consolidation; a broad rewrite is not supported. If revision is selected, first retain those distinctions in focused contrast cases and decide whether a local clarification or example is warranted. No accepted revision plan, replacement consumer output or runtime fix is part of this campaign.
 
 Publish/read back this report checkpoint on the campaign branch, then await the user's next decision. The campaign remains open; main integration and closure require their own instruction.
+
+## Subsequent revision decision
+
+After review publication `cb25838027d2b047078a535675ac9bae6cdb66e1`, the user requested “Plan necessary fixes, execute, close” on 2026-11-04. The [accepted focused plan](REVISION-PLAN.md) and [revision report](REVISION-REPORT.md) own the resulting action and verification. Earlier review-only stopping statements describe the original checkpoint. Baseline observations and raw outputs remain retained; later successful samples do not retroactively change B-3 into a passing response.

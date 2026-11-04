@@ -63,6 +63,8 @@ Offer a revised sample only when requested or useful to explain a recommendation
 
 ## Examples and failure handling
 
+- A required "Context" topic appears as a heading, but no supplied content explains it. Topic presence is satisfied; explanatory adequacy is not assessable. If the brief also requires content notes, their absence fails that separate requirement. Do not invent a note requirement for a topic-only outline.
+- One contradictory status claim fails both source fidelity and required-topic representation. Report one finding carrying both criterion bases and its shared remedy. Keep independent defects separate.
 - "Operations" and "Problems" duplicate troubleshooting: recommend consolidation or clearer boundaries and explain the navigation cost.
 - "Reliability" contains only installation steps: identify the misleading promise. Accurate "Methods" and "Results" headings need no renaming solely for specificity.
 - "Validated capabilities" is based only on filenames: fail that status claim's source-fidelity check, even if the tree is balanced. Implementation may exist elsewhere; do not claim it is universally absent.
