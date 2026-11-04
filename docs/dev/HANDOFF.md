@@ -1,6 +1,6 @@
 # Project handoff
 
-Checkpoint: revision V-001 complete for campaign `004_b382f78` on 2026-11-04.
+Checkpoint: campaign `004_b382f78` closure preparation on 2026-11-04.
 
 ## Workflow and authority
 
@@ -21,4 +21,4 @@ Checkpoint: revision V-001 complete for campaign `004_b382f78` on 2026-11-04.
 
 Opening checkpoint `7c69e4d74ad771aea8c4605883300db654787239` is published and verified. V-001 copied both attachments unchanged and inserted the exact requested text in AGENTS.md; byte identity, surrounding-text preservation and bounded current-link checks passed. The required discovery roots were absent and reported in chat. The connected GitHub app is the available publication route; no credential is stored in this checkout.
 
-Publish/read back the containing revision result and pause on the campaign branch for the user's next decision. Runtime, governing documents and closed records remain unchanged. Closure, main integration, installation and release are not requested. Recover actual subsequent publication from Git/API before replaying this checkpoint's pending effect.
+Revision result `d02bb1ea5e6b1f86fdac84ecd376eeeb8245067d` is published and verified. The user subsequently requested “Close it” on 2026-11-04, authorizing finalization, integration into main, publication and return. Publish/read back this finalization checkpoint before merging, reconcile HANDOFF to the returned parent context, verify and publish the explicit two-parent merge. Runtime, governing documents and prior closed records remain unchanged. No release or installation is authorized. After verified main publication, retain the campaign unchanged and await the next objective.

@@ -29,3 +29,11 @@ The restored checkout had no saved shell credential or configured credential hel
 This is a repository-guidance amendment, not a runtime skill revision or installed-skill update. The Windows policy was preserved as supplied; native Windows shell behavior was not exercised on this Linux host. No comprehensive review, release or prior optional finding repair was added to scope.
 
 V-001 is complete. After result publication/readback, leave campaign 004 open on its branch for the user's next decision. Main integration and closure have not been requested.
+
+## Closure checkpoint
+
+The user requested “Close it” on 2026-11-04 after result `d02bb1ea5e6b1f86fdac84ecd376eeeb8245067d` was published and read back. This authorizes finalization, integration into the recorded creation parent `main`, publication and return. Earlier stopping-boundary statements describe the pre-closure checkpoint.
+
+V-001 is complete. Finalization retains both policy attachments byte for byte and the exact AGENTS insertion. The same bounded current-source link, whitespace, content-identity and protected-path checks are repeated before finalization and on the prospective merge. Windows-native execution remains outside this Linux-host change.
+
+Publish/read back the containing finalization checkpoint before integration. The explicit two-parent merge records the verified parent/source tips, original opening `7c69e4d74ad771aea8c4605883300db654787239`, original baseline `b382f7803479073a3532c62ebdf868f76549116f` and merged checks in its integration summary. Successful main publication/readback and return close campaign 004. No release, installation or additional revision follows automatically.
