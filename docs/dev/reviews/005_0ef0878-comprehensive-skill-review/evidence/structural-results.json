@@ -1,0 +1,68 @@
+{
+  "baseline": "0ef087801f826d749c791f4116012930dcddfce7",
+  "runtime_files": 23,
+  "recipe_rows": 17,
+  "recipe_rows_equal": true,
+  "runtime_markdown_words": 15138,
+  "word_counts": {
+    "technical-writing-assistant/SKILL.md": 674,
+    "technical-writing-assistant/agents/openai.yaml": 59,
+    "technical-writing-assistant/assets/icon.svg": 49,
+    "technical-writing-assistant/references/argument-review.md": 557,
+    "technical-writing-assistant/references/composition-analysis.md": 1032,
+    "technical-writing-assistant/references/composition-exploration.md": 488,
+    "technical-writing-assistant/references/draft-development.md": 599,
+    "technical-writing-assistant/references/evidence-review.md": 684,
+    "technical-writing-assistant/references/language-revision.md": 516,
+    "technical-writing-assistant/references/manager.md": 2066,
+    "technical-writing-assistant/references/material-assessment.md": 461,
+    "technical-writing-assistant/references/outline-context-exploration.md": 564,
+    "technical-writing-assistant/references/outline-generation.md": 528,
+    "technical-writing-assistant/references/outline-review.md": 1110,
+    "technical-writing-assistant/references/professional-writing.md": 557,
+    "technical-writing-assistant/references/revision-check.md": 791,
+    "technical-writing-assistant/references/scientific-writing.md": 512,
+    "technical-writing-assistant/references/software-documentation.md": 660,
+    "technical-writing-assistant/references/source-research.md": 652,
+    "technical-writing-assistant/references/structural-revision.md": 546,
+    "technical-writing-assistant/references/style-guidelines.md": 1168,
+    "technical-writing-assistant/references/terminology-consistency.md": 493,
+    "technical-writing-assistant/references/writing-brief.md": 480
+  },
+  "root_policy_words": {
+    "AGENTS.md": 314,
+    "SKILL_DISCOVERY_PROTOCOL.md": 379,
+    "WINDOWS_SHELL_POLICY.md": 633
+  },
+  "positive": {
+    "references": 20,
+    "local_links": 175,
+    "errors": [],
+    "selected_markdown_files": 38,
+    "existence_only_placeholders": [
+      "docs/dev/REVIEW.md",
+      "docs/dev/REVISION_REVIEW.md",
+      "docs/dev/revision_plans/REVISION_PLAN_1cc08a2.md"
+    ]
+  },
+  "missing_resource": {
+    "errors": [
+      "Routing mismatch: missing=[], extra=['writing-brief.md']",
+      "Capability-map references disagree with package inventory",
+      "Missing link target: technical-writing-assistant/SKILL.md -> references/writing-brief.md",
+      "Missing link target: technical-writing-assistant/references/composition-exploration.md -> writing-brief.md",
+      "Missing link target: technical-writing-assistant/references/draft-development.md -> writing-brief.md",
+      "Missing link target: technical-writing-assistant/references/manager.md -> writing-brief.md",
+      "Missing link target: technical-writing-assistant/references/material-assessment.md -> writing-brief.md",
+      "Missing link target: technical-writing-assistant/references/outline-context-exploration.md -> writing-brief.md"
+    ],
+    "count": 8
+  },
+  "broken_anchor": {
+    "errors": [
+      "Missing anchor: technical-writing-assistant/SKILL.md -> references/manager.md#missing-review005-anchor"
+    ],
+    "count": 1
+  },
+  "source_preservation": "Only HANDOFF and campaign 005 records differ; runtime/current source and all closed records unchanged."
+}

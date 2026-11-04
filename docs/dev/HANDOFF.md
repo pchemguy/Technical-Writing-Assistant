@@ -1,13 +1,13 @@
 # Project handoff
 
-Checkpoint: opening comprehensive review campaign `005_0ef0878` on 2026-11-04.
+Checkpoint: comprehensive review U-001 complete for campaign `005_0ef0878` on 2026-11-04.
 
 ## Workflow and authority
 
 - Coordinator: SDD Manager; comprehensive current-source review U-001, Standard reporting; Linux/Bash host.
 - User requested a comprehensive review campaign. Review the full skill and current supporting guidance, run bounded offline checks and fresh sampled tasks, and publish the detailed report.
 - Stop at published review findings. Repairs, main integration, closure, installation and release are not requested.
-- Active plan: [REVIEW-PLAN.md](reviews/005_0ef0878-comprehensive-skill-review/REVIEW-PLAN.md).
+- Active records: [REVIEW-PLAN.md](reviews/005_0ef0878-comprehensive-skill-review/REVIEW-PLAN.md) and [REVIEW-REPORT.md](reviews/005_0ef0878-comprehensive-skill-review/REVIEW-REPORT.md).
 - Governing sources: [SPEC.md](SPEC.md), [CAPABILITY_MAP.md](CAPABILITY_MAP.md) and [PLAN.md](PLAN.md).
 
 ## Source and continuity
@@ -20,4 +20,6 @@ Checkpoint: opening comprehensive review campaign `005_0ef0878` on 2026-11-04.
 
 ## Pending work and next boundary
 
-Publish/read back this opening checkpoint before U-001. Inspect every current runtime resource, trace interfaces, assess new repository policies, run fresh cases and selected package checks, then consolidate the report and its limits. Publish/read back that result and leave the campaign open. No historical record is a current review or link-validation target.
+Opening `139edc750f3caa543133306602101667f9c4b108` is published and verified. U-001 is complete: no confirmed source defect; two low-priority consumer-output issues R-001/R-002 in one outline review. All 23 runtime files and current supporting guidance were assessed, two attributed source reviews retained, and ten fresh numbered requests run in two contexts. Nine met criteria; one partly met them. Package/current-link checks and selected negative fixtures passed. No source repair or historical-record change was made.
+
+Publish/read back the containing report checkpoint through the connected GitHub app, then leave this campaign open on its branch for the user's next decision. Existing source instructions already cover the two observed output weaknesses; do not infer an accepted runtime rewrite. No main integration, closure, release or installation is activated. Recover later Git/API state before replaying the snapshot's pending effect.
