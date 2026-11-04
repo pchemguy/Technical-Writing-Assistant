@@ -1,28 +1,26 @@
 # Project handoff
 
-Checkpoint: campaign `003_b4b1f80` finalization and return to main on 2026-10-20.
-The containing two-parent merge identifies this snapshot. Confirm its later main publication through Git and remote readback before treating closure as complete.
+Checkpoint: campaign `004_b382f78` finalization and return to main on 2026-11-04.
+The containing two-parent merge identifies this checkpoint. Verify its subsequent main publication by Git/API readback before treating closure as complete.
 
-## Outcome and sources
+## Outcome and current sources
 
-- Coordinator: SDD Manager; comprehensive review U-001 complete; Standard reporting; Linux/Bash host.
-- Governing sources: [SPEC.md](SPEC.md), [CAPABILITY_MAP.md](CAPABILITY_MAP.md), [PLAN.md](PLAN.md).
-- Retained campaign: [REVIEW-PLAN.md](reviews/003_b4b1f80-comprehensive-skill-review/REVIEW-PLAN.md) and [REVIEW-REPORT.md](reviews/003_b4b1f80-comprehensive-skill-review/REVIEW-REPORT.md), including attributed assessments and raw task evidence.
-- Result: no confirmed material defect; one low-priority optional precision recommendation, R-001, remains unimplemented. No repair was accepted or required for review completion.
-- Coverage: all 20 references and entry inspected in full; current support documents, metadata and icon assessed; thirteen sampled responses in three fresh contexts met task criteria. Samples do not establish universal or target-client behavior.
-- Runtime tree remains `b1d4178992fd77054cf9dffcfc5f576e01718a71`; no skill or governing-source change was made.
+- Completed scope: both supplied policy attachments copied unchanged to the repository root; exact Initialization and Windows shell text inserted before Governing documents in AGENTS.md.
+- Campaign evidence: [REVISION-PLAN.md](reviews/004_b382f78-repository-policies/REVISION-PLAN.md) and [REVISION-REPORT.md](reviews/004_b382f78-repository-policies/REVISION-REPORT.md).
+- Governing sources remain [SPEC.md](SPEC.md), [CAPABILITY_MAP.md](CAPABILITY_MAP.md) and [PLAN.md](PLAN.md).
+- V-001 is complete. Both attachment byte identities and all AGENTS bytes outside the insertion are preserved; bounded package/current-link checks passed. No runtime or governing-source revision was made.
+- Linux/Bash execution host; Windows-native shell behavior was not exercised. Standard reporting; Minimal and Explicit remain available.
 
 ## Authority and provenance
 
-- The user requested a comprehensive review, then explicitly requested “close it” on 2026-10-20. Final integration, publication and return to main are authorized.
-- Completed source branch: `revision/003_b4b1f80-comprehensive-skill-review`; creation parent and return target: `main`.
-- Original branch-off and refreshed target parent: `b4b1f80b375c9bb9811eae9a1d513c4580f00025`.
-- Original campaign opening: `0b52ad63448f65e0ffb5a4956dc275145f7a3cbd`.
-- Published review checkpoint: `4d8fc0f0a4968fd7e5174d7fcd584a9968072132`.
-- Verified published finalization source: `ba14463417fdb490a54a3c4f8ec76f994e16af0a`.
-- Repository: https://github.com/pchemguy/Technical-Writing-Assistant.
-- No suspended parent implementation exists. Prior campaigns 001 and 002 and the separate stopped legacy checkout remain preserved.
+- User requested the focused amendment, then “Close it” on 2026-11-04, authorizing final integration, publication and return.
+- Source branch: `revision/004_b382f78-repository-policies`; creation parent and return target: `main`.
+- Original branch-off and refreshed target parent: `b382f7803479073a3532c62ebdf868f76549116f`.
+- Original published campaign opening: `7c69e4d74ad771aea8c4605883300db654787239`.
+- Published implementation result: `d02bb1ea5e6b1f86fdac84ecd376eeeb8245067d`.
+- Verified published finalization source: `c924234ce19088080a954458332774520cfff287`.
+- No suspended parent implementation exists. Earlier closed campaigns remain unchanged.
 
-## Pending effects and next boundary
+## Pending effect and next boundary
 
-Verify and commit the prospective merge, publish it to origin/main and read back its parents and remote containment. Successful target publication and return to main close campaign 003; no second closure commit is needed. Retain the closed records unchanged and await the user's next objective. Do not start revision, installation, release or another campaign automatically.
+Publish/read back the containing verified merge to origin/main through the connected GitHub app. Successful target publication and return to main close campaign 004; no second closure commit is needed. Retain the closed records unchanged and await the next user objective. No release, installation or unrelated revision follows automatically. Recover later Git/API state before replaying this checkpoint's pending effect.
