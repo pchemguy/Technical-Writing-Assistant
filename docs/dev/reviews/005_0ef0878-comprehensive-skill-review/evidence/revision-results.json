@@ -1,0 +1,21 @@
+{
+  "review_source": "cb25838027d2b047078a535675ac9bae6cdb66e1",
+  "source_file": "technical-writing-assistant/references/outline-review.md",
+  "candidate_blob": "44d273ba3a572c18339a66bc9ee73ded635b42b6",
+  "added_words": 74,
+  "source_change": "Exactly two examples; existing source preserved.",
+  "original_review_evidence": "unchanged",
+  "structural": {
+    "references": 20,
+    "links": 190,
+    "errors": [],
+    "selected_markdown_files": 43,
+    "existence_only_placeholders": [
+      "docs/dev/REVIEW.md",
+      "docs/dev/REVISION_REVIEW.md",
+      "docs/dev/revision_plans/REVISION_PLAN_1cc08a2.md"
+    ]
+  },
+  "recipe_rows_equal": 17,
+  "protected_scope": "Only outline-review, HANDOFF and campaign 005 differ; previous closed packages/current governing sources unchanged."
+}
