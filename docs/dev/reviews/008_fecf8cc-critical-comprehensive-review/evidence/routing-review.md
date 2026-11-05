@@ -44,3 +44,7 @@ The remaining entry issue is that those composite details are available only aft
 ## Finding and recheck
 
 R-003 is a medium-priority, high-confidence entry-content gap. It supersedes the earlier unqualified C-001/entry pass, not the whole source review or its structural observations. Correct only entry routing and minimal composite handoff guidance; keep focused procedures, metadata and manager/map recipes intact. Recheck each revised row against its owner, direct link inventory, review/revision authority and output/stop. Source checks establish clarified instruction coverage; client behavior remains untested.
+
+## A-003 source recheck
+
+The revised entry supplies exactly 20 distinct routing-table rows, including manager, and compact review/revision/outline composite routes. Every condition and boundary was compared with its owner: redesign remains an outline-generation entry; research intent selects source research even if access later proves unavailable; focused language/terminology review does not imply unrequested edits. All row targets match the 20-file inventory. Metadata, Execution/Delivery, focused procedures and manager/map recipe contents remain unchanged. This corrects the entry-only source gap; no fresh consumer/client result is asserted.

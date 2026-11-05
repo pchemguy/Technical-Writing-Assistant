@@ -26,29 +26,38 @@ Use the smallest workflow that satisfies the request. Reuse supplied context and
 
 ## Routing
 
-Load focused references directly. Load [manager.md](references/manager.md) for composite work. For evidence work with unclear mode, use its evidence-mode selection section even when invoking a focused reference; do not start an entire composite workflow merely to select a mode.
+Select the owner from the table before loading procedures. No reference is mandatory for every task. For an unresolved evidence choice during focused work, load only the manager's [mode-selection section](references/manager.md#evidence-modes-and-selection), without starting a full composite workflow.
 
-| Need | Reference |
-|---|---|
-| Scope, audience, constraints, and deliverables | [Writing brief](references/writing-brief.md) |
-| Initial material triage and priorities | [Material assessment](references/material-assessment.md) |
-| Shared editorial criteria and checklist | [Style guidelines](references/style-guidelines.md) |
-| Sentence, paragraph, section, and document composition; size and level of detail | [Composition analysis](references/composition-analysis.md) |
-| Alternative framing, organization, and outlines | [Composition exploration](references/composition-exploration.md) |
-| Context, relationships, and criteria for an outline or map | [Outline context exploration](references/outline-context-exploration.md) |
-| Generate a structured outline or map | [Outline generation](references/outline-generation.md) |
-| Review quality and/or validate structure, source fidelity, and requirement coverage | [Outline review](references/outline-review.md) |
-| Reasoning, assumptions, counterarguments, and blind spots | [Argument review](references/argument-review.md) |
-| Claim support, evidence gaps, and prospective sources | [Evidence review](references/evidence-review.md) |
-| Independent external research and fact-checking | [Source research](references/source-research.md) |
-| Reorganization and compositional changes | [Structural revision](references/structural-revision.md) |
-| Bullets, notes, and outlines to prose | [Draft development](references/draft-development.md) |
-| Mechanics, clarity, precision, concision, and voice | [Language revision](references/language-revision.md) |
-| Terms, definitions, abbreviations, notation, and units | [Terminology consistency](references/terminology-consistency.md) |
-| READMEs, tutorials, APIs, architecture, and docstrings | [Software documentation](references/software-documentation.md) |
-| Scientific explanations and manuscripts | [Scientific writing](references/scientific-writing.md) |
-| Reports, proposals, correspondence, and decision briefs | [Professional writing](references/professional-writing.md) |
-| Requested-change completion, fidelity, and introduced defects | [Revision check](references/revision-check.md) |
+| Load when | Reference | Role and boundary |
+| --- | --- | --- |
+| A multi-part task needs coordination across focused workflows | [Manager](references/manager.md) | Choose owners/order, reconcile results and stop; focused edits do not require a composite path. |
+| Purpose, audience, constraints or editing authority is materially unclear | [Writing brief](references/writing-brief.md) | Resolve intake decisions; skip a self-contained correction. Does not rewrite the material. |
+| Mixed or substantial input has uncertain maturity/readiness | [Material assessment](references/material-assessment.md) | Triage integrity and priorities, not exhaustive diagnosis or rewriting. |
+| Selected editorial criteria or a style review are needed | [Style guidelines](references/style-guidelines.md) | Supply shared criteria; style compliance does not verify facts or authorize substantive changes. |
+| Existing composition, size or explanatory detail needs assessment | [Composition analysis](references/composition-analysis.md) | Diagnose contribution, development and flow; return findings rather than automatically shorten or rewrite. |
+| Materially different framing or organizing approaches merit comparison | [Composition exploration](references/composition-exploration.md) | Compare approaches before major changes; do not silently choose a new authorial position. |
+| Consequential outline/map representation choices remain unresolved | [Outline context exploration](references/outline-context-exploration.md) | Establish contextual criteria and relationships; reuse clear brief decisions instead of repeating intake. |
+| An outline/map must be generated or an authorized redesign implemented | [Outline generation](references/outline-generation.md) | Construct source-bounded structure, mark proposals and gaps, and stop before unrequested prose. |
+| An existing/generated structure needs review or validation | [Outline review](references/outline-review.md) | Select evaluative, validation or combined coverage; distinguish preferences from failures; no automatic redesign. |
+| Claims, premises or inference need critical examination | [Argument review](references/argument-review.md) | Diagnose reasoning and propose repairs; empirical checking belongs to evidence work. |
+| Available support or evidence gaps need assessment | [Evidence review](references/evidence-review.md) | Assess claim/support fit in either mode; independent retrieval is a conditional handoff. |
+| Independent research or claim verification is selected | [Source research](references/source-research.md) | Retrieve/inspect corroborating sources using authorized tools; disclose unavailable access without silently changing mode. Target intake stays separate. |
+| Organization or placement changes are authorized | [Structural revision](references/structural-revision.md) | Implement arrangement and supported connections; flag missing substance rather than invent it. |
+| Notes, fragments or an outline must become prose | [Draft development](references/draft-development.md) | Develop supported ideas; do not invent facts, authorial positions or commitments. |
+| Expression needs review or editing within the requested authority | [Language revision](references/language-revision.md) | Assess or repair expression while preserving substantive meaning and protected expressions. |
+| Recurring terms, definitions, notation or units need reconciliation | [Terminology consistency](references/terminology-consistency.md) | Make usage contextually consistent without merging distinct concepts or renaming protected identifiers. |
+| The task concerns software documentation or docstrings | [Software documentation](references/software-documentation.md) | Apply genre/interface checks against inspected material; no implementation or execution authority. |
+| The task concerns scientific reporting or explanation | [Scientific writing](references/scientific-writing.md) | Check reporting and interpretation; do not invent methods, results or unperformed analytical validation. |
+| Professional reports, proposals, decisions or correspondence need work | [Professional writing](references/professional-writing.md) | Check actions, support and commitment status; drafting does not authorize sending. |
+| A produced or supplied revision needs comparison | [Revision check](references/revision-check.md) | Compare with source and brief; skip findings-only work without a revised artifact and disclose unavailable comparisons. |
+
+### Composite routes
+
+- **Comprehensive review:** Manager → relevant genre guidance → needed composition, language/style, argument, evidence and terminology assessments → consolidated findings and limits. Stop before repairs unless independently authorized.
+- **Draft revision/development:** Manager → relevant diagnosis → applicable authorized structural revision, draft development, language and terminology work → revision check → requested revised text and unresolved decisions. Skip unnecessary stages; substantive additions remain explicit.
+- **Outline/map work:** Use context exploration only for unresolved representation choices, then generation or review/validation as requested. After authorized repairs, compare affected material through revision check. Stop at the requested structure or findings; prose development is a separate requested output.
+
+The manager retains the adaptable detailed recipes and evidence-mode rules. These routes identify owners, consequential order, output and stopping boundaries without requiring every listed stage.
 
 ## Delivery
 

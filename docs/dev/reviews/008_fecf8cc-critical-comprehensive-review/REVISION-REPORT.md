@@ -26,6 +26,14 @@ README and AGENTS document the command, exclusions, parser subset, active select
 
 Pytest RED before the scope implementation: **17 failed, 31 passed**. GREEN after implementation: **48 passed**. The new cases include synthetic inactive/tool records, active/current broken links, an unreadable historical target with a fragment (proving its contents are not read), missing historical targets, all-scope selection, invalid/unknown CLI options and ambiguous combinations. Full scope was tested only on synthetic fixtures; actual closed records were not read or validated.
 
+## A-003 / R-003: entry routing and composite handoffs
+
+**Executed and source-checked.** SKILL.md now has exactly **20 distinct table rows for the 20 reference files**, including manager. Each row supplies a loading condition and a role/scope boundary; manager's separate mode-section link is not counted as a table row. Three concise composite routes state owners/order/output/stop for review, revision/development and outline/map work, without copying the manager's 17 recipes.
+
+The row-by-row comparison against owning Scope/Inputs/Procedure/Outputs sections checks triage versus diagnosis, organizing versus representation exploration, generation/redesign versus review, direct research requests even with unavailable access, editing authority and findings-only revision-check exclusion. The entry keeps its frontmatter, safeguards, Execution and Delivery unchanged; all focused references, manager recipes and presentation are unchanged. R-003 corrects the earlier overly broad pass: this source recheck supports clarified entry instructions, not observed client compliance.
+
+Validation: direct table extraction gives 20 rows, 20 unique reference targets and exact inventory equality. Package validation passes; current-source check with active campaign gives 20 references / 177 links / 0 errors at this checkpoint. No new behavioral tests are claimed for a prose clarification; existing checker regressions are rerun against the revised package.
+
 ## Remaining actions and closure boundary
 
-A-001 was published as `62d2178d3f1a51c3cefd603018d62aa1871c5bfb`. Publish/read back A-002 before continuing. A-003 (all 20 entry routing rows and minimal composite handoffs) and user-requested A-004 (remove README Status, Illustrative revision and the identified safeguard paragraph) remain pending. Closure and main integration follow verified completion of all four actions, not this intermediate checkpoint.
+A-001 was published as `62d2178d3f1a51c3cefd603018d62aa1871c5bfb`; A-002 as `c07fc99d10a7eed0586da8576cce360a39ae0a4e`. Publish/read back A-003 before user-requested A-004 (remove README Status, Illustrative revision and the identified safeguard paragraph). Closure and main integration follow verified completion of all four actions, not this intermediate checkpoint.
