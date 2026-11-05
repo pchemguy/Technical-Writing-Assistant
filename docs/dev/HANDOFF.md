@@ -1,22 +1,19 @@
 # Project handoff
 
-Checkpoint: campaign `007_a3d514b` accepted scope complete; explicit integration into `main` prepared on 2026-11-05. Publication/readback establishes final closure.
+Checkpoint: comprehensive critical review campaign `008_fecf8cc` opened on 2026-11-05.
 
-## Scope and authority
+## Workflow and authority
 
-- The user authorized opening, implementation and closure. Action A-001 and its verification are complete in [REVISION-PLAN.md](reviews/007_a3d514b-policy-cleanup-and-metadata/REVISION-PLAN.md) and [REVISION-REPORT.md](reviews/007_a3d514b-policy-cleanup-and-metadata/REVISION-REPORT.md). Standard reporting; no pending approval or suspended parent workflow.
-- Deleted the discovery and Windows shell policy files and their AGENTS sections. Added README `url` and the supplied skill frontmatter display name, aliases string, author and repository.
-- Governing documents: [SPEC.md](SPEC.md), [CAPABILITY_MAP.md](CAPABILITY_MAP.md), [PLAN.md](PLAN.md). Skill instructions, references, presentation and campaigns 001–006 are unchanged.
+- User requested opening and running a comprehensive critical review. [REVIEW-PLAN.md](reviews/008_fecf8cc-critical-comprehensive-review/REVIEW-PLAN.md) owns U-001 and C-001–C-008. Standard reporting; stop at published findings before repairs, integration or closure.
+- Review current runtime, presentation, checker and root/governing documents. Current/supplied-content evidence mode; no external fact checking. Inline source/structural assessment; fresh independent consumer trials are not authorized under current delegation constraints and are an explicit evidence limit.
+- Governing documents: [SPEC.md](SPEC.md), [CAPABILITY_MAP.md](CAPABILITY_MAP.md), [PLAN.md](PLAN.md).
 
-## Integration provenance
+## Provenance and continuity
 
-- Working branch: `revision/007_a3d514b-policy-cleanup-and-metadata`; recorded creation parent, receiving and return branch: `main`.
-- Original branch-off baseline and refreshed target tip: `a3d514bb2b8ce6e311d8b5cabb2130f61548a2fa`.
-- Original opening: `663c46cc5a8248c5fc21ee385ff7ede31740c071`; verified published source/implementation tip: `6a45675dbfc199b2f184d275d630638a30077af9`.
-- Linux/Bash, Python 3.12.14, Git 2.51.1; exact-tree publication and ref readback through the connected GitHub app.
+- Working branch: `revision/008_fecf8cc-critical-comprehensive-review`; recorded creation parent and potential later integration/return target: `main`.
+- Branch-off/review baseline: `fecf8cc097c9bccc78c0ac29676d397a1fefaa15`, verified published. Campaign 007 is integrated/closed; campaigns 001–007 remain frozen. No suspended parent workflow.
+- Linux/Bash with Python 3.12.14; connected GitHub app for exact-tree publication/readback.
 
-## Results and return boundary
+## Next boundary
 
-- Exact edits and metadata values/types, offline package validation/inventory, current-source fixture links/anchors/routing/presentation, whitespace and full-scope preservation passed. The fixture checks 20 references and 164 local Markdown links with 0 errors; package validation reports 0 errors/warnings.
-- Closed campaign records and historical contents were excluded from current-validity checks. No writing-workflow, alias activation, client loading, external URL, installation or release behavior is claimed. Earlier stopped local artifacts remain outside this campaign/publication.
-- The explicit two-parent merge into `main` requires publication and exact remote readback, then clean return on `main`; Git records these subsequent facts. After that boundary campaign 007 is closed and frozen. Stop; no additional revision, release or installation is selected.
+Publish/read back this opening, assess U-001 and publish its report/evidence, then leave the campaign open on its revision branch. No reviewed-source changes, release, installation, main integration or closure. Earlier local partial-review artifacts are outside the selected campaign and publication.
