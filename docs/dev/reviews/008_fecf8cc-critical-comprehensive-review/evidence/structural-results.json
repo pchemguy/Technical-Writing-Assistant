@@ -1,0 +1,348 @@
+{
+  "baseline": "fecf8cc097c9bccc78c0ac29676d397a1fefaa15",
+  "python": "3.12.14",
+  "method": "Offline structure and synthetic fixtures; no agent/client execution",
+  "historical_existence_placeholders": [
+    "docs/dev/REVIEW.md",
+    "docs/dev/REVISION_REVIEW.md",
+    "docs/dev/revision_plans/REVISION_PLAN_1cc08a2.md"
+  ],
+  "apa": [
+    {
+      "script": "validate_skill.py",
+      "exit": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "script": "inspect_package.py",
+      "exit": 0,
+      "stdout": "PACKAGE: skill\n  references: 20\n  assets: 1\nVALIDATION: errors: 0, warnings: 0\nRUNTIME: not verified by inventory",
+      "stderr": ""
+    }
+  ],
+  "current": {
+    "errors": [],
+    "local_links": 172,
+    "references": 20
+  },
+  "synthetic_cases": {
+    "missing_reference": {
+      "checker_errors": [
+        "Routing mismatch: missing=[], extra=['language-revision.md']",
+        "Capability-map references disagree with package inventory",
+        "Missing link target: technical-writing-assistant/SKILL.md -> references/language-revision.md",
+        "Missing link target: technical-writing-assistant/references/professional-writing.md -> language-revision.md",
+        "Missing link target: technical-writing-assistant/references/software-documentation.md -> language-revision.md",
+        "Missing link target: technical-writing-assistant/references/structural-revision.md -> language-revision.md",
+        "Missing link target: technical-writing-assistant/references/style-guidelines.md -> language-revision.md"
+      ],
+      "local_links": 168,
+      "references": 19
+    },
+    "broken_anchor": {
+      "checker_errors": [
+        "Missing anchor: technical-writing-assistant/SKILL.md -> references/manager.md#absent-campaign008-anchor"
+      ],
+      "local_links": 173,
+      "references": 20
+    },
+    "escaping_link": {
+      "checker_errors": [
+        "Link escapes repository: technical-writing-assistant/SKILL.md -> ../../outside-campaign008.md"
+      ],
+      "local_links": 173,
+      "references": 20
+    },
+    "duplicate_name": {
+      "checker_errors": [],
+      "local_links": 172,
+      "references": 20,
+      "apa_issues": [
+        {
+          "severity": "ERROR",
+          "path": "technical-writing-assistant/SKILL.md",
+          "rule": "frontmatter",
+          "message": "duplicate frontmatter key"
+        }
+      ]
+    },
+    "nonstring_aliases": {
+      "checker_errors": [],
+      "local_links": 172,
+      "references": 20,
+      "apa_issues": [
+        {
+          "severity": "ERROR",
+          "path": "technical-writing-assistant/SKILL.md",
+          "rule": "frontmatter-unverified",
+          "message": "unsupported YAML scalar syntax"
+        }
+      ]
+    },
+    "valid_optional_license": {
+      "checker_errors": [
+        "Expected name and description scalar frontmatter"
+      ],
+      "local_links": 172,
+      "references": 20,
+      "apa_issues": []
+    },
+    "synthetic_closed_record": {
+      "checker_errors": [
+        "Missing link target: docs/dev/reviews/000_synthetic-closed/REVIEW-REPORT.md -> not-a-current-target.md"
+      ],
+      "local_links": 173,
+      "references": 20
+    }
+  },
+  "inventory": [
+    {
+      "path": "technical-writing-assistant/SKILL.md",
+      "bytes": 5948,
+      "words": 686,
+      "lines": 57,
+      "sha256": "fa2d6b9295b4229b47a324fb8e97cd62eed9dcc61136ab63778c5fa28b89c469"
+    },
+    {
+      "path": "technical-writing-assistant/agents/openai.yaml",
+      "bytes": 525,
+      "words": 59,
+      "lines": 9,
+      "sha256": "e09a0dcfa99f3a97010eefd4ea56852b71433f6434da0168d303598beffbeae3"
+    },
+    {
+      "path": "technical-writing-assistant/assets/icon.svg",
+      "bytes": 597,
+      "words": 49,
+      "lines": 6,
+      "sha256": "b9bd004473a4aa51adf18749fc3d04879cd3ddb0a4e606814eb4ef5cd019b33c"
+    },
+    {
+      "path": "technical-writing-assistant/references/argument-review.md",
+      "bytes": 4287,
+      "words": 557,
+      "lines": 35,
+      "sha256": "c6269ea69ae308e2002b3f17a2c5d39f3ca5ff20e10a4cf4e1c9a9e85c899f5e"
+    },
+    {
+      "path": "technical-writing-assistant/references/composition-analysis.md",
+      "bytes": 7849,
+      "words": 1032,
+      "lines": 57,
+      "sha256": "f2707fcc08c79869c1b84ba67f4eadc21aac53763ac62ddc57b0c83159dc2785"
+    },
+    {
+      "path": "technical-writing-assistant/references/composition-exploration.md",
+      "bytes": 3700,
+      "words": 488,
+      "lines": 34,
+      "sha256": "92047a499d1b92facad2065d2c528f45dd065e47e77ab295bc3b704a7dd76dc6"
+    },
+    {
+      "path": "technical-writing-assistant/references/draft-development.md",
+      "bytes": 4456,
+      "words": 599,
+      "lines": 42,
+      "sha256": "c3875cb6c86adf353e09e56b491c28bbd2a29df5172b44a0b5f69ecdd90deda6"
+    },
+    {
+      "path": "technical-writing-assistant/references/evidence-review.md",
+      "bytes": 5136,
+      "words": 684,
+      "lines": 38,
+      "sha256": "447ba50cf73594c6e41575272c67ed5f597fa0158c8bb77bb55aca074f4df9ef"
+    },
+    {
+      "path": "technical-writing-assistant/references/language-revision.md",
+      "bytes": 3941,
+      "words": 516,
+      "lines": 36,
+      "sha256": "322cba4083b3f4fa1bd966b4e7f7b62030bbffa84a968aa05992d0c2defc544d"
+    },
+    {
+      "path": "technical-writing-assistant/references/manager.md",
+      "bytes": 15753,
+      "words": 2066,
+      "lines": 128,
+      "sha256": "589da4069dd84a114d66cb34d9759b3a202f932b3abaa91a49bde0dfa5846025"
+    },
+    {
+      "path": "technical-writing-assistant/references/material-assessment.md",
+      "bytes": 3442,
+      "words": 461,
+      "lines": 34,
+      "sha256": "6adbd441d28db25267e1b8cdc9c3e799f7a95016a9bf9927b96ff8e2fb2ee68d"
+    },
+    {
+      "path": "technical-writing-assistant/references/outline-context-exploration.md",
+      "bytes": 4249,
+      "words": 564,
+      "lines": 37,
+      "sha256": "e8fbaedf3804e64afb48ce53e31e2e0f694f48167fd330deb52544f93ffdf5f1"
+    },
+    {
+      "path": "technical-writing-assistant/references/outline-generation.md",
+      "bytes": 3938,
+      "words": 528,
+      "lines": 35,
+      "sha256": "2509fb8cf4cd4015ad58eb2f2915c8d431d42fa7a2abeb1190c0085ae9d31c13"
+    },
+    {
+      "path": "technical-writing-assistant/references/outline-review.md",
+      "bytes": 9039,
+      "words": 1184,
+      "lines": 77,
+      "sha256": "473cd5d6006002faa0a020cf40d61d473b79222431b670eed97e867a3a3508a6"
+    },
+    {
+      "path": "technical-writing-assistant/references/professional-writing.md",
+      "bytes": 4206,
+      "words": 557,
+      "lines": 42,
+      "sha256": "0a83e7229a8206b94eeb8491fc0ec23323a4cfecb749089d5e203e3df3252b4b"
+    },
+    {
+      "path": "technical-writing-assistant/references/revision-check.md",
+      "bytes": 6092,
+      "words": 791,
+      "lines": 42,
+      "sha256": "edae549c480c6136d95533dbec41c200dfd66d23abbcc14c6ef882ef57032c42"
+    },
+    {
+      "path": "technical-writing-assistant/references/scientific-writing.md",
+      "bytes": 4016,
+      "words": 512,
+      "lines": 36,
+      "sha256": "7152df314a51c9ed2c874b0ebb6c02d2bc4882219e9812ed28cc44a2d52abad6"
+    },
+    {
+      "path": "technical-writing-assistant/references/software-documentation.md",
+      "bytes": 5173,
+      "words": 660,
+      "lines": 46,
+      "sha256": "afb0edaa1c2f94ba2de269071001df3709b0b2cdbc0f108c580845e595981a96"
+    },
+    {
+      "path": "technical-writing-assistant/references/source-research.md",
+      "bytes": 4947,
+      "words": 652,
+      "lines": 37,
+      "sha256": "b85253e8d86200e193da689e2548c9a6f3d7ee7df80fdd0dc99cd300fa06df1b"
+    },
+    {
+      "path": "technical-writing-assistant/references/structural-revision.md",
+      "bytes": 4204,
+      "words": 546,
+      "lines": 35,
+      "sha256": "73a4fa2a824f436415bba194714498e1b42ac65df7075e840a922ac5912ef83c"
+    },
+    {
+      "path": "technical-writing-assistant/references/style-guidelines.md",
+      "bytes": 8801,
+      "words": 1168,
+      "lines": 92,
+      "sha256": "d37b38f836d865439edde96cf31b8c8bfbd82a5e8bef7c6b5c419985e9475228"
+    },
+    {
+      "path": "technical-writing-assistant/references/terminology-consistency.md",
+      "bytes": 3838,
+      "words": 493,
+      "lines": 36,
+      "sha256": "d95c68d657219797d35501b28b3c48135015f1339fbcc533e0a7108f97adbe56"
+    },
+    {
+      "path": "technical-writing-assistant/references/writing-brief.md",
+      "bytes": 3564,
+      "words": 480,
+      "lines": 34,
+      "sha256": "f8beb35c117e2350a2bdb311ea7b953071b8884e3d9e82d3001a6b739aebb2e0"
+    },
+    {
+      "path": "AGENTS.md",
+      "bytes": 2173,
+      "words": 270,
+      "lines": 24,
+      "sha256": "02c6be5630ca025b5d6e097640b197f574d980702796e0ede67e23be6ac16b58"
+    },
+    {
+      "path": "README.md",
+      "bytes": 4779,
+      "words": 569,
+      "lines": 61,
+      "sha256": "be59b84854793fcf65ff63b238f68c73cc22b19708b8c26bd51b8e969b7c95d4"
+    },
+    {
+      "path": "SDD-MANAGER.md",
+      "bytes": 683,
+      "words": 85,
+      "lines": 5,
+      "sha256": "ab12d665c8148cbf4fb8e190f265ccda667c4d47e8aae2304deed0bcf3d5a5bf"
+    },
+    {
+      "path": "AI_DISCLOSURE.md",
+      "bytes": 1192,
+      "words": 143,
+      "lines": 13,
+      "sha256": "09411dc61f4966efabe8e821f2270c768baf5b96f4fd4587eb5c05233de7ffea"
+    },
+    {
+      "path": "docs/dev/SPEC.md",
+      "bytes": 5079,
+      "words": 628,
+      "lines": 27,
+      "sha256": "366f80d57f0a1bacdf136b65aa124a5fdd8a39bd74f22ff93933144257b1061c"
+    },
+    {
+      "path": "docs/dev/CAPABILITY_MAP.md",
+      "bytes": 42415,
+      "words": 5502,
+      "lines": 308,
+      "sha256": "98e8d63960de917b483c63a5068a783f9a5c06b2d98c960f051aa765ed3ee32c"
+    },
+    {
+      "path": "docs/dev/PLAN.md",
+      "bytes": 2525,
+      "words": 333,
+      "lines": 45,
+      "sha256": "97fb35fc36a127503fc8f63cdd1e42c512d2b18a99ac67202778585230de4dee"
+    },
+    {
+      "path": "docs/dev/HANDOFF.md",
+      "bytes": 2288,
+      "words": 235,
+      "lines": 22,
+      "sha256": "15b953cae4553142803f6c799840753117a58734c491b29a053c121d0beebce1"
+    },
+    {
+      "path": "tools/check_package.py",
+      "bytes": 6051,
+      "words": 556,
+      "lines": 127,
+      "sha256": "503fc6feecef9f8f1c8c1cd33a61815f6960a9934caf142015f47d6f1f5dfbaa"
+    }
+  ],
+  "recipes": {
+    "manager": 17,
+    "map": 17,
+    "identical": true
+  },
+  "shared_style_identical": true,
+  "metadata": {
+    "note": "aliases is intentionally a JSON-encoded string, not a YAML sequence"
+  },
+  "observation_assertions": {
+    "current_clean": true,
+    "apa_clean": true,
+    "recipe_parity": true,
+    "shared_style_parity": true,
+    "missing_reference_detected": true,
+    "broken_anchor_detected": true,
+    "escape_detected": true,
+    "duplicate_false_accept_reproduced": true,
+    "metadata_false_accept_reproduced": true,
+    "optional_field_false_reject_reproduced": true,
+    "closed_record_scope_problem_reproduced": true
+  },
+  "all_observation_assertions_passed": true
+}
