@@ -17,7 +17,7 @@ Do not routinely load or edit closed campaign plans, reports or historical trial
 
 ## Checks and workflow boundaries
 
-The documented development command is `python tools/check_package.py` with Python 3.11 or newer. It checks repository links, routing and selected presentation properties; it does not execute the skill or verify external URLs. It scans repository Markdown, so use an explicitly bounded current-source fixture when historical records are excluded from the selected review.
+The documented development command is `python tools/check_package.py` with Python 3.11 or newer. Its default current-source scope checks root Markdown, the runtime skill and current docs while excluding retained collections and legacy review contents. Add `--active-campaign docs/dev/reviews/<campaign>` for each explicitly selected active campaign; excluded historical targets receive existence-only link checks. `--scope all` is a deliberate full-repository mode, not a routine current-source check. See README for exact exclusions and supported frontmatter syntax. The checker does not execute the skill or verify external URLs. With pytest available, run `python -m pytest tests -q` for regressions.
 
 Preserve unrelated work. Review requests authorize findings and requested campaign artifacts, not runtime repairs, installation or a merge by implication. Commit and publish coherent owned checkpoints within the established scope, verifying remote persistence. For task-list implementation, use one executable task's result, evidence and initial completion checkbox in its owning task commit.
 

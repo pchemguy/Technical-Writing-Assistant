@@ -1,16 +1,90 @@
 """Check repository links, routing coverage, and local presentation properties.
 
 Run with Python 3.11 or newer. This read-only, standard-library checker supports
-the inline Markdown links and scalar metadata used by this repository. It does
-not validate arbitrary YAML, retrieve URLs, execute the skill, or judge prose.
+inline Markdown links, one-line string scalars and a two-space string metadata
+mapping. Unsupported YAML is reported as unverified with a nonzero result.
+It does not retrieve URLs, execute the skill, or judge prose.
 """
 
 from collections import Counter
+import argparse
 import json
 from pathlib import Path
 import re
 import sys
 import xml.etree.ElementTree as ET
+
+
+FRONTMATTER_FIELDS = {"name", "description", "license", "compatibility", "metadata", "allowed-tools"}
+IMPLICIT_VALUES = {"null", "true", "false", "~", ".inf", "+.inf", "-.inf", ".nan"}
+NUMBER = re.compile(r"[-+]?(?:0[xob][0-9a-f_]+|[0-9][0-9_]*(?:\.[0-9_]*)?(?:e[-+]?[0-9]+)?|\.[0-9]+(?:e[-+]?[0-9]+)?)$", re.I)
+RETAINED_COLLECTIONS = tuple(Path("docs/dev") / name for name in
+                             ("reviews", "features", "reports", "revision_plans", "validation"))
+LEGACY_DOCUMENTS = {Path("docs/dev/REVIEW.md"), Path("docs/dev/REVISION_REVIEW.md")}
+
+
+def string_scalar(value: str) -> str:
+    """Read a supported YAML string; never coerce a nonstring into a string."""
+    value = value.strip()
+    if value.startswith('"'):
+        try:
+            parsed, end = json.JSONDecoder().raw_decode(value)
+        except ValueError as error:
+            raise ValueError("unsupported double-quoted scalar") from error
+        remainder = value[end:]
+        if not isinstance(parsed, str) or (remainder and not re.fullmatch(r"\s+#.*|\s+", remainder)):
+            raise ValueError("unsupported quoted scalar suffix")
+        return parsed
+    if value.startswith("'"):
+        match = re.fullmatch(r"'((?:[^']|'')*)'(?:\s+#.*)?", value)
+        if not match:
+            raise ValueError("unsupported single-quoted scalar")
+        return match[1].replace("''", "'")
+    value = re.split(r"\s+#", value, maxsplit=1)[0].rstrip()
+    if (not value or value[0] in "[{>|&*!@`\"'" or value.startswith(("- ", "? ", ": "))
+            or value.lower() in IMPLICIT_VALUES or NUMBER.fullmatch(value)
+            or re.match(r"\d{4}-\d{2}-\d{2}(?:$|[Tt ])", value)
+            or ": " in value or any(ord(char) < 32 for char in value)):
+        raise ValueError("expected a one-line string scalar; unsupported or nonstring YAML")
+    return value
+
+
+def frontmatter_fields(text: str) -> dict:
+    """Parse the documented subset, rejecting duplicates and unverified syntax."""
+    fields = {}
+    nested = False
+    implicit_empty_metadata = False
+    for line in text.splitlines():
+        if not line.strip() or line.lstrip().startswith("#"):
+            continue
+        if line.startswith("  "):
+            match = re.fullmatch(r"  ([A-Za-z0-9_][\w.-]*):\s*(.*)", line)
+            if not nested or not match:
+                raise ValueError("unsupported nesting or indentation")
+            key, value = match.groups()
+            if key in fields["metadata"]:
+                raise ValueError(f"duplicate metadata key: {key}")
+            fields["metadata"][key] = string_scalar(value)
+            continue
+        match = re.fullmatch(r"([a-z][a-z-]*):\s*(.*)", line)
+        if not match:
+            raise ValueError("unsupported frontmatter line or indentation")
+        key, value = match.groups()
+        if key in fields:
+            raise ValueError(f"duplicate frontmatter key: {key}")
+        if key not in FRONTMATTER_FIELDS:
+            raise ValueError(f"unsupported frontmatter field: {key}")
+        nested = key == "metadata" and (not value.strip() or value.lstrip().startswith("#"))
+        if key == "metadata":
+            if not nested and not re.fullmatch(r"\{\}(?:\s+#.*)?", value.strip()):
+                raise ValueError("metadata must be a string mapping")
+            fields[key] = {}
+            implicit_empty_metadata = nested
+        else:
+            fields[key] = string_scalar(value)
+    if implicit_empty_metadata and not fields["metadata"]:
+        raise ValueError("metadata has no mapping entries; use metadata: {} for an empty mapping")
+    return fields
 
 
 def anchors(text: str) -> set[str]:
@@ -25,15 +99,53 @@ def anchors(text: str) -> set[str]:
     return result
 
 
-def check(root: Path) -> tuple[list[str], int, int]:
+def retained_document(path: Path, root: Path) -> bool:
+    """Identify retained collections by path, without loading their contents."""
+    relative = path.relative_to(root)
+    return relative in LEGACY_DOCUMENTS or any(relative.is_relative_to(p) for p in RETAINED_COLLECTIONS)
+
+
+def markdown_sources(root: Path, scope: str, active_campaigns) -> list[Path]:
+    """Select current roots and explicitly named campaigns, or opt-in full scope."""
+    if scope not in {"current", "all"}:
+        raise ValueError("scope must be current or all")
+    if scope == "all":
+        if active_campaigns:
+            raise ValueError("--active-campaign applies only to current scope")
+        selected = set(root.rglob("*.md"))
+    else:
+        selected = set(root.glob("*.md"))
+        selected.update((root / "technical-writing-assistant").rglob("*.md"))
+        selected.update(p for p in (root / "docs").rglob("*.md") if not retained_document(p, root))
+        for campaign in active_campaigns:
+            path = (root / campaign).resolve()
+            if path.parent != root / "docs/dev/reviews" or not path.is_dir():
+                raise ValueError("active campaign must be an existing immediate directory in docs/dev/reviews")
+            selected.update(path.rglob("*.md"))
+    sources = []
+    for path in sorted(selected):
+        if ".git" in path.relative_to(root).parts:
+            continue
+        if not path.resolve().is_relative_to(root):
+            raise ValueError(f"Markdown source escapes repository: {path.relative_to(root)}")
+        sources.append(path)
+    return sources
+
+
+def check(root: Path, *, scope: str = "current", active_campaigns=()) -> tuple[list[str], int, int]:
     """Return errors and inspected link/reference counts for this repository.
 
     Args:
         root: Repository directory containing the skill and capability map.
+        scope: Current sources by default; all opts into repository-wide checks.
+        active_campaigns: Explicit campaign directories included in current scope.
 
     Returns:
         Error messages, count of local Markdown links, and reference count.
     """
+    root = root.resolve()
+    sources = markdown_sources(root, scope, active_campaigns)
+    selected = {p.resolve() for p in sources}
     errors: list[str] = []
     link_count = 0
     skill = root / "technical-writing-assistant"
@@ -45,13 +157,17 @@ def check(root: Path) -> tuple[list[str], int, int]:
     if not front:
         errors.append("Missing frontmatter delimiters")
     else:
-        fields = dict(re.findall(r"^([a-z]+): (.+)$", front[1], re.MULTILINE))
-        if set(fields) != {"name", "description"}:
-            errors.append("Expected name and description scalar frontmatter")
-        if fields.get("name") != skill.name:
-            errors.append("Skill name does not match its directory")
-        if not 1 <= len(fields.get("description", "")) <= 1024:
-            errors.append("Description length outside supported range")
+        try:
+            fields = frontmatter_fields(front[1])
+        except ValueError as error:
+            errors.append(f"Frontmatter invalid or unverified: {error}")
+        else:
+            if fields.get("name") != skill.name:
+                errors.append("Skill name missing or does not match its directory")
+            if not 1 <= len(fields.get("description", "")) <= 1024:
+                errors.append("Description missing or length outside supported range")
+            if len(fields.get("compatibility", "")) > 500:
+                errors.append("Compatibility length outside supported range")
     references = {p.name for p in (skill / "references").glob("*.md")}
     routed = set(re.findall(r"\]\(references/([^)#]+\.md)(?:#[^)]*)?\)", entry))
     if routed != references:
@@ -63,9 +179,7 @@ def check(root: Path) -> tuple[list[str], int, int]:
             errors.append("Capability-map references disagree with package inventory")
     else:
         errors.append("Missing governing capability map")
-    for path in sorted(root.rglob("*.md")):
-        if ".git" in path.parts:
-            continue
+    for path in sources:
         text = path.read_text(encoding="utf-8")
         if path.is_relative_to(skill) and re.search(
             r"Implementation work remaining|Status:.*(?:skeleton|scaffold)", text
@@ -81,6 +195,8 @@ def check(root: Path) -> tuple[list[str], int, int]:
                 errors.append(f"Link escapes repository: {path.relative_to(root)} -> {target}")
             elif not destination.exists():
                 errors.append(f"Missing link target: {path.relative_to(root)} -> {target}")
+            elif scope == "current" and retained_document(destination, root) and destination not in selected:
+                continue  # Validate historical target existence, never its contents/fragments.
             elif fragment and (not destination.is_file() or fragment not in anchors(destination.read_text(encoding="utf-8"))):
                 errors.append(f"Missing anchor: {path.relative_to(root)} -> {target}")
     metadata = skill / "agents/openai.yaml"
@@ -114,12 +230,23 @@ def check(root: Path) -> tuple[list[str], int, int]:
 
 def main() -> int:
     """Print structural results and exit nonzero for errors."""
-    root = Path(sys.argv[1]).resolve() if len(sys.argv) > 1 else Path(__file__).resolve().parents[1]
-    errors, links, references = check(root)
+    parser = argparse.ArgumentParser(description=__doc__)
+    parser.add_argument("root", nargs="?", type=Path, default=Path(__file__).resolve().parents[1])
+    parser.add_argument("--scope", choices=("current", "all"), default="current")
+    parser.add_argument("--active-campaign", action="append", default=[], metavar="PATH",
+                        help="include a selected docs/dev/reviews campaign; repeatable")
+    args = parser.parse_args()
+    try:
+        errors, links, references = check(args.root, scope=args.scope, active_campaigns=args.active_campaign)
+    except ValueError as error:
+        parser.error(str(error))
     for error in errors:
         print(f"ERROR: {error}")
     print(f"Checked {references} references and {links} local Markdown links; {len(errors)} errors.")
-    print("Scope: local structural checks; runtime and external URLs not assessed.")
+    print(f"Scope: {args.scope}; local structure only; runtime and external URLs not assessed.")
+    if args.scope == "current":
+        print("Retained records: existence-only link targets; contents excluded unless selected.")
+        print("Selected active campaigns: " + (", ".join(args.active_campaign) or "none"))
     return int(bool(errors))
 
 

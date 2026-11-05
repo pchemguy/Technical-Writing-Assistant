@@ -1,0 +1,56 @@
+# Campaign 008 revision report
+
+## Authority and preserved baseline
+
+The user authorized planning, fixes and closure; subsequent routing-table questions added the bounded R-003 correction. [REVISION-PLAN.md](REVISION-PLAN.md) owns actions A-001–A-004. Original source review and reproduced-defect evidence remain unchanged except the separately recorded review correction. Starting review source is `fecf8cc097c9bccc78c0ac29676d397a1fefaa15`; completed review is `7fff37d4720ba38665ce688635a34e62b006fe48`; accepted plan is `699dc1ae6f48e9042a64c6971b742acad2bbb58c`; amended routing plan is `13d4f74ad52422c4ef57848970e545ddbab81364`.
+
+## A-001 / R-001: frontmatter checking
+
+**Executed and verified.** The standard-library checker now parses its documented one-line string subset, detects duplicate required/optional/nested keys, validates string metadata values, accepts supported optional fields and reports unsupported/ambiguous YAML as invalid or unverified with a nonzero result. Quoted required fields/comments and explicit empty metadata mappings are supported. Missing/oversized description and oversized compatibility remain failures. The runtime skill was not changed for this action.
+
+Regression tests in `tests/test_check_package.py` exercise actual temporary copies of the package and literal format contrasts. The initial RED command produced **19 failed, 10 passed**, demonstrating duplicate-key/nonstring-metadata false acceptance, optional/quoted-field false rejection and unsupported-form gaps. After the production change, the same command produced **29 passed**:
+
+```console
+python -m pytest tests/test_check_package.py -q --tb=short -p no:cacheprovider
+```
+
+The session initially lacked pytest. Pytest 9.2.0 and its test-only dependencies were installed into an isolated scratch target and selected through command-local PYTHONPATH; no global install or runtime dependency was added. PYTHONDONTWRITEBYTECODE=1 prevents test bytecode output. The command above assumes pytest is available to the chosen Python.
+
+The suite covers current package acceptance, valid optional/quoted/empty-string inputs, duplicate keys at both levels, unsupported/nonstring values, and missing-reference/broken-anchor/escaping-link regressions. It is format/checker evidence, not writing-workflow or client acceptance. The original review helper/JSON still describe the pre-revision checker and are not rerun or overwritten against this revised source.
+
+## A-002 / R-002: supported current-source checks
+
+**Executed and verified.** `python tools/check_package.py` now defaults to current root Markdown, the runtime package and current docs. Retained reviews/features/phase reports/revision plans/validation collections, legacy review documents and repository-local tool trees are not scanned as current sources. Explicit `--active-campaign PATH` options add selected immediate review-campaign directories; path/type/existence checks reject invalid selections. Excluded retained link targets receive existence-only checks without reading their contents or historical fragments. `--scope all` is an explicit, separately labelled full-repository operation and cannot be combined ambiguously with active selection.
+
+README and AGENTS document the command, exclusions, parser subset, active selection and regression command. The real checkout passes both default scope (20 references / 164 links) and explicit campaign 008 scope (20 references / 176 links), with zero errors at this checkpoint.
+
+Pytest RED before the scope implementation: **17 failed, 31 passed**. GREEN after implementation: **48 passed**. The new cases include synthetic inactive/tool records, active/current broken links, an unreadable historical target with a fragment (proving its contents are not read), missing historical targets, all-scope selection, invalid/unknown CLI options and ambiguous combinations. Full scope was tested only on synthetic fixtures; actual closed records were not read or validated.
+
+## A-003 / R-003: entry routing and composite handoffs
+
+**Executed and source-checked.** SKILL.md now has exactly **20 distinct table rows for the 20 reference files**, including manager. Each row supplies a loading condition and a role/scope boundary; manager's separate mode-section link is not counted as a table row. Three concise composite routes state owners/order/output/stop for review, revision/development and outline/map work, without copying the manager's 17 recipes.
+
+The row-by-row comparison against owning Scope/Inputs/Procedure/Outputs sections checks triage versus diagnosis, organizing versus representation exploration, generation/redesign versus review, direct research requests even with unavailable access, editing authority and findings-only revision-check exclusion. The entry keeps its frontmatter, safeguards, Execution and Delivery unchanged; all focused references, manager recipes and presentation are unchanged. R-003 corrects the earlier overly broad pass: this source recheck supports clarified entry instructions, not observed client compliance.
+
+Validation: direct table extraction gives 20 rows, 20 unique reference targets and exact inventory equality. Package validation passes; current-source check with active campaign gives 20 references / 177 links / 0 errors at this checkpoint. No new behavioral tests are claimed for a prose clarification; existing checker regressions are rerun against the revised package.
+
+## A-004: requested README cleanup
+
+**Executed and checked.** Removed the complete Status section, Illustrative revision subsection and paragraph beginning “The skill preserves quotations”, exactly as requested. Retained frontmatter, capability/use guidance, navigation and the supported development check instructions. Diff inspection and current-source link checks verify this prose-only cleanup; no content-mirroring unit tests were added.
+
+## Final disposition and integration boundary
+
+| Item | Current disposition | Evidence |
+| --- | --- | --- |
+| R-001 / A-001 | Fixed and verified | Bounded string/mapping parser; observed RED 19 failed / 10 passed, GREEN 29 passed |
+| R-002 / A-002 | Implemented and verified | Current-source default, explicit active selection and all scope; observed RED 17 failed / 31 passed, GREEN 48 passed |
+| R-003 / A-003 | Clarified and source-verified | 20 distinct table rows for 20 files, row/owner boundaries and composite route/stop checks; no independent client claim |
+| A-004 | Completed | Requested README removals; retained metadata/use/check sections and valid links |
+
+Published action checkpoints: A-001 `62d2178d3f1a51c3cefd603018d62aa1871c5bfb`, A-002 `c07fc99d10a7eed0586da8576cce360a39ae0a4e`, A-003 `dbe1a3df7d2dcdef7fb4d8be5c2d0076f4425345`. A-004 and these final records are ready for publication. All four actions are within the user's plan/fix/close instruction and subsequent routing/README steering.
+
+Final verification passed: 48 pytest regressions; actual package inventory/validation with 0 errors/warnings; documented current-source command (20 references / 165 links / 0 errors) and explicitly selected campaign (20 references / 180 links / 0 errors); 20-row/inventory equality and scope/whitespace checks. Original review helper/JSON/source/scenario evidence remain baseline observations; they were not overwritten or rerun as post-fix results. All focused reference/presentation blobs and campaigns 001–007 are preserved by object identity. Only the skill's entry routing changed; metadata, safeguards, Execution and Delivery are unchanged.
+
+The earlier zero-runtime-defect/entry pass was corrected by R-003, which is now addressed in source. No independent consumer behavior, alias activation, installation, live research or release verification was performed; those disclosed limits are unchanged and are not represented as fixed by checker or prose tests.
+
+The user authorized campaign closure. Publish/read back the final campaign tip, explicitly merge it into refreshed creation parent `main`, verify the merged result, publish/read back and return clean on `main`. Git records those subsequent integration/publication facts; this pre-integration report does not claim its own future SHA or completed merge. After that boundary campaign 008 is closed/frozen; no further task, release or installation is selected.

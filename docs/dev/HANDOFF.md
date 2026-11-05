@@ -1,22 +1,22 @@
 # Project handoff
 
-Checkpoint: campaign `007_a3d514b` accepted scope complete; explicit integration into `main` prepared on 2026-11-05. Publication/readback establishes final closure.
+Checkpoint: campaign `008_fecf8cc` comprehensive review and accepted revisions complete; explicit main integration prepared on 2026-11-05. Final publication/readback establishes closure.
 
-## Scope and authority
+## Scope and result
 
-- The user authorized opening, implementation and closure. Action A-001 and its verification are complete in [REVISION-PLAN.md](reviews/007_a3d514b-policy-cleanup-and-metadata/REVISION-PLAN.md) and [REVISION-REPORT.md](reviews/007_a3d514b-policy-cleanup-and-metadata/REVISION-REPORT.md). Standard reporting; no pending approval or suspended parent workflow.
-- Deleted the discovery and Windows shell policy files and their AGENTS sections. Added README `url` and the supplied skill frontmatter display name, aliases string, author and repository.
-- Governing documents: [SPEC.md](SPEC.md), [CAPABILITY_MAP.md](CAPABILITY_MAP.md), [PLAN.md](PLAN.md). Skill instructions, references, presentation and campaigns 001–006 are unchanged.
+- User authorized review, then planning/fixes/closure, with later routing correction and README removals. [REVIEW-REPORT.md](reviews/008_fecf8cc-critical-comprehensive-review/REVIEW-REPORT.md), [REVISION-PLAN.md](reviews/008_fecf8cc-critical-comprehensive-review/REVISION-PLAN.md) and [REVISION-REPORT.md](reviews/008_fecf8cc-critical-comprehensive-review/REVISION-REPORT.md) retain baseline findings, accepted scope and current evidence. Standard reporting; no pending decision or suspended parent.
+- R-001 fixed: bounded frontmatter validation rejects duplicates/nonstring metadata and accepts supported optional fields. R-002 implemented: default current-source checks, explicit active campaigns and opt-in full scope. R-003 corrected: all 20 references, including manager, have load-condition/role/boundary rows and concise composite routes. Requested README Status, Illustrative revision and safeguard paragraph are removed.
+- Governing documents: [SPEC.md](SPEC.md), [CAPABILITY_MAP.md](CAPABILITY_MAP.md), [PLAN.md](PLAN.md). Metadata, focused references, presentation, original review evidence and campaigns 001–007 are unchanged. The initial entry-review pass was explicitly corrected rather than silently retained.
 
 ## Integration provenance
 
-- Working branch: `revision/007_a3d514b-policy-cleanup-and-metadata`; recorded creation parent, receiving and return branch: `main`.
-- Original branch-off baseline and refreshed target tip: `a3d514bb2b8ce6e311d8b5cabb2130f61548a2fa`.
-- Original opening: `663c46cc5a8248c5fc21ee385ff7ede31740c071`; verified published source/implementation tip: `6a45675dbfc199b2f184d275d630638a30077af9`.
-- Linux/Bash, Python 3.12.14, Git 2.51.1; exact-tree publication and ref readback through the connected GitHub app.
+- Campaign branch: `revision/008_fecf8cc-critical-comprehensive-review`; creation parent, receiving and return branch: `main`.
+- Original branch-off/review baseline and refreshed first parent: `fecf8cc097c9bccc78c0ac29676d397a1fefaa15`.
+- Original opening: `fc769adb516eba514f0a4987f902634a546af3a2`; completed original review: `7fff37d4720ba38665ce688635a34e62b006fe48`; verified published final campaign/source tip: `5524549f858f9cc5315ce237572b5b8d29bb655d`.
+- A-001–A-004 were verified and individually published on the campaign branch. Linux/Bash, Python 3.12.14; pytest 9.2.0 is isolated and test-only. Checker runtime has no added dependency. Publication uses the connected GitHub app with exact tree/ref readback.
 
-## Results and return boundary
+## Verification and return boundary
 
-- Exact edits and metadata values/types, offline package validation/inventory, current-source fixture links/anchors/routing/presentation, whitespace and full-scope preservation passed. The fixture checks 20 references and 164 local Markdown links with 0 errors; package validation reports 0 errors/warnings.
-- Closed campaign records and historical contents were excluded from current-validity checks. No writing-workflow, alias activation, client loading, external URL, installation or release behavior is claimed. Earlier stopped local artifacts remain outside this campaign/publication.
-- The explicit two-parent merge into `main` requires publication and exact remote readback, then clean return on `main`; Git records these subsequent facts. After that boundary campaign 007 is closed and frozen. Stop; no additional revision, release or installation is selected.
+- 48 checker regressions passed after recorded RED failures; actual package validation/inventory is clean. Default current-source and selected active-campaign checks pass; explicit table inventory is 20 distinct rows / 20 files. Merged scope, whitespace and protected object identities are checked before publication.
+- Source analysis and checker/prose verification do not establish independent consumer/client behavior, alias activation, live research or installation. Those limits remain explicit; no release was selected. Earlier local partial-review artifacts remain outside publication.
+- Publish/read back the explicit two-parent main merge and return clean on main; Git records those subsequent facts. After that boundary campaign 008 is closed and frozen. No further task, review, release or installation is selected.
