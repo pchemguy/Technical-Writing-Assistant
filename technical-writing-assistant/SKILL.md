@@ -1,6 +1,11 @@
 ---
 name: technical-writing-assistant
 description: Review and revise software documentation and scientific, technical, and professional writing; develop bullets and early notes into organized prose; analyze composition, arguments, terminology, and evidence. Generate, review, validate, and repair structured outlines or maps by adapting to their context. Use for focused editing, comprehensive review, drafting, compositional alternatives, argument critique, evidence-gap assessment, fact-checking, and generic or specialized outline/map work.
+metadata:
+  display-name: Technical Writing Assistant
+  aliases: '["TWA", "twa"]'
+  author: PChemGuy
+  repository: https://github.com/pchemguy/Technical-Writing-Assistant
 ---
 
 # Technical Writing Assistant

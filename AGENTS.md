@@ -2,14 +2,6 @@
 
 This repository develops the standalone Technical Writing Assistant skill. Its runtime entry is [technical-writing-assistant/SKILL.md](technical-writing-assistant/SKILL.md); focused procedures and shared guidance are under its references directory. Optional OpenAI presentation is under agents and assets inside that package.
 
-## Initialization
-
-Execute the [skill and plugin discovery protocol](SKILL_DISCOVERY_PROTOCOL.md).
-
-## Windows shell
-
-On **Windows execution hosts only**, follow [WINDOWS_SHELL_POLICY.md](WINDOWS_SHELL_POLICY.md): CMD syntax, unavailable PowerShell/pwsh, temporary files for script text and shell operations, and the documented tool probe/recovery. This repository policy is independent of the plugin.
-
 ## Governing documents
 
 - [Specification](docs/dev/SPEC.md) defines required behavior.
