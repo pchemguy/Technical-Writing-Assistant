@@ -15,6 +15,7 @@
 | A-001 | R-001; checker and regression tests | Implement a bounded standard-library frontmatter parser: required string fields; duplicate top-level/nested-key detection; string-to-string metadata; supported standard optional fields; explicit nonzero unverified/error results for unhandled syntax. Prove failing tests first, then verify valid current/quoted/optional input and rejected duplicates/nonstring/unsupported inputs. Retain routing/link/presentation checks. |
 | A-002 | R-002; checker CLI, regression tests, README and AGENTS | Provide a documented current-source mode by default, excluding retained review/revision/validation/feature/report collections and legacy review documents from content inspection. Include explicitly selected active campaign directories; validate excluded historical link targets by existence only, without reading their contents/fragments. Keep an explicit full-repository mode. Prove historical exclusion, active/current error detection, contained selection and useful CLI outcomes. |
 | A-003 | R-003; entry and source recheck | Clarify per-reference load conditions and role/scope boundaries, plus minimal composite review/revision handoffs in SKILL.md. Compare every row with the owning procedure and check owners/order/output/stop without duplicating manager recipes. Preserve metadata, focused procedures and recipe parity. |
+| A-004 | User README cleanup | Remove the complete Status section, Illustrative revision subsection and user-identified safeguard paragraph, as requested during execution. Preserve capability/use guidance, frontmatter and the revised check instructions; inspect the diff and current links without adding content-mirroring tests. |
 
 
 The supported parser subset includes one-line plain/single-quoted/double-quoted string scalars and a two-space metadata mapping; complex YAML remains explicitly unverified, not silently accepted. Focused procedure contents and skill metadata need no editing; A-003 clarifies only entry routing. R-002 selection is explicit; no attempt to guess campaign closure from names or HANDOFF text.
@@ -31,3 +32,7 @@ The supported parser subset includes one-line plain/single-quoted/double-quoted 
 ## Amendment during execution
 
 The user asked whether the routing/routine table had been checked. R-003 and evidence/routing-review.md correct the earlier overly broad C-001 pass. A-001 regression tests already exist with an observed RED run (19 failed, 10 passed); production code is still unchanged at this amendment. Preserve those uncommitted tests, publish the scoped review/plan correction, then continue A-001, A-002 and A-003 in order, publishing each verified result before the next action. No full review restart or independent consumer claim is introduced.
+
+The user subsequently requested deleting README’s “Illustrative revision” and “Status” blocks. A-004 records that explicit cleanup; it does not change runtime capabilities or expand historical evidence review.
+
+The additional README paragraph beginning “The skill preserves quotations” is also explicitly selected for removal within A-004.

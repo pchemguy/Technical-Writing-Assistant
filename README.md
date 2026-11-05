@@ -50,12 +50,18 @@ The sample size and testing limits survive; broader applicability remains unesta
 
 The skill preserves quotations, code, equations, identifiers, essential reasoning, numerical factors, and qualifications. Substantive proposals remain explicit. Drafting does not authorize sending messages, publishing, or changing software.
 
-Run local resource, routing, and presentation checks with Python 3.11 or newer:
+Run current-source resource, routing, frontmatter and presentation checks with Python 3.11 or newer:
 
 ```console
 python tools/check_package.py
 ```
 
-This development checker does not execute the skill or retrieve external sources.
+The default `current` scope checks root Markdown, the runtime skill and current documents under `docs/`. Retained review, feature, phase-report, revision-plan and validation collections, plus legacy review documents, are excluded from content checks. Links to excluded records are checked for target existence only, without reading their contents or validating historical heading fragments.
+
+Include each selected active campaign with `--active-campaign docs/dev/reviews/<campaign>` (replace `<campaign>` with its directory name; repeat the option for multiple active campaigns). Use `--scope all` only for an explicitly intended full-repository check; it includes retained and tool-directory Markdown and should not be used for routine current-source validation.
+
+The checker supports one-line plain or quoted string scalars and a two-space string-to-string `metadata` mapping. Duplicate keys, nonstring values and unsupported YAML produce a nonzero invalid/unverified result; this is not a general YAML validator. It does not execute the skill or retrieve external sources.
+
+With pytest available, run checker regression tests with `python -m pytest tests -q`. Pytest is a development dependency; the checker itself uses only the standard library.
 
 Development uses [SDD Manager](SDD-MANAGER.md). See the [AI-assisted development disclosure](AI_DISCLOSURE.md).
