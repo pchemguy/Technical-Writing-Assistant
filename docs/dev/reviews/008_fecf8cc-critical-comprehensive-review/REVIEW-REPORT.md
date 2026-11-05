@@ -1,5 +1,7 @@
 # Comprehensive critical review report
 
+Current revision outcome: R-001, R-002 and R-003 are addressed, and the requested README cleanup is complete. The [revision report](REVISION-REPORT.md) records current verification. The original review below describes its pinned baseline; its initial entry pass is corrected by R-003.
+
 ## Result and assessed source
 
 **U-001 is complete within the source/structural evidence boundary: one confirmed checker defect, one development-workflow improvement recommendation, no confirmed runtime-instruction defects, and no source repairs executed.** Independent consumer behavior remains unassessed; this is not a universal quality, reliability or release-readiness pass.
@@ -124,3 +126,7 @@ After the user questioned whether the routing/routine table had been reviewed, t
 **R-003 — entry-content gap; medium priority, high confidence.** At the reviewed baseline, SKILL.md lines 29–51 names the right owners but several rows only label topics. The triage versus detailed diagnosis distinction, representation exploration versus generation, review versus implementation, and revision-check skip condition are available inside references rather than sufficiently at selection. Composite guidance is principally a manager pointer, leaving owner/order/output/stop details behind that lookup. No separate manager recipe-order defect is confirmed after content inspection.
 
 **Consequence/remedy/recheck:** The entry makes adjacent workflow selection depend on opening references to discover their boundaries. Add compact load-condition, owner and role/boundary rows for every reference, plus concise composite review/revision handoffs without duplicating the full recipe catalogue. Compare each row with its owner and recheck direct links, scoped effects and stopping. This is a source-content finding, not an observed client failure. The user's existing plan/fix/close instruction covers correction within this active campaign. REVISION-PLAN.md now includes A-003. Original observations and evidence above remain for provenance; current source disposition must include this correction.
+
+## Current revision disposition
+
+The later user instruction accepted repairs and closure. [REVISION-PLAN.md](REVISION-PLAN.md) and [REVISION-REPORT.md](REVISION-REPORT.md) own the current results: R-001 fixed, R-002 implemented, R-003 clarified/source-checked, plus the explicitly requested README cleanup. The original review, counts and reproduced-defect evidence above describe their pinned baseline; the routing correction supersedes the overbroad initial entry pass. Current verification and remaining behavioral limits are reported separately rather than rewriting historical observations.

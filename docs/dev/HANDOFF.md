@@ -1,22 +1,22 @@
 # Project handoff
 
-Checkpoint: campaign `008_fecf8cc` review published; accepted revisions A-001/A-002/A-003 planned on 2026-11-05.
+Checkpoint: campaign `008_fecf8cc` review and accepted revisions A-001–A-004 complete on 2026-11-05; final publication/integration pending.
 
-## Workflow and authority
+## Scope and authority
 
-- User first requested comprehensive critical review and now explicitly authorizes revision planning, the fixes and closure. [REVIEW-PLAN.md](reviews/008_fecf8cc-critical-comprehensive-review/REVIEW-PLAN.md) owns U-001; [REVIEW-REPORT.md](reviews/008_fecf8cc-critical-comprehensive-review/REVIEW-REPORT.md) owns findings, coverage and proposed next work. [REVISION-PLAN.md](reviews/008_fecf8cc-critical-comprehensive-review/REVISION-PLAN.md) owns A-001/A-002/A-003. Standard reporting.
-- Scope inspected in full: 21 runtime Markdown files, both presentation files, checker and current root/governing documents. No external fact checking or reviewed-source edits.
-- Result: R-001 is a confirmed frontmatter-checking defect; R-002 recommends a supported current-source check command. The later routing-table correction records R-003, an entry-content gap, and supersedes the initial unqualified entry pass. Inline scenarios are not fresh consumer trials; independent behavioral acceptance remains unassessed under current delegation constraints.
+- User requested comprehensive critical review, then revision planning, fixes and closure, with later routing-table correction and README removals. [REVIEW-REPORT.md](reviews/008_fecf8cc-critical-comprehensive-review/REVIEW-REPORT.md), [REVISION-PLAN.md](reviews/008_fecf8cc-critical-comprehensive-review/REVISION-PLAN.md) and [REVISION-REPORT.md](reviews/008_fecf8cc-critical-comprehensive-review/REVISION-REPORT.md) own baseline findings, accepted actions and current evidence. Standard reporting; no pending approval.
+- Completed: R-001 bounded frontmatter validation, R-002 supported current-source/active-campaign checks, R-003 all 20 entry routing rows and composite handoffs, and requested README cleanup. The initial overbroad entry pass is explicitly corrected in the active review report.
 - Governing documents: [SPEC.md](SPEC.md), [CAPABILITY_MAP.md](CAPABILITY_MAP.md), [PLAN.md](PLAN.md).
 
-## Provenance and continuity
+## Provenance and return
 
-- Working branch: `revision/008_fecf8cc-critical-comprehensive-review`; creation parent and potential later integration/return target: `main`.
-- Exact reviewed source/branch-off baseline: `fecf8cc097c9bccc78c0ac29676d397a1fefaa15`; runtime tree `06fd76767b5380a48a69a907fdbb4bebdb194fe9`, unchanged.
-- Published opening: `fc769adb516eba514f0a4987f902634a546af3a2`. Campaigns 001–007 are closed/frozen and unchanged; no suspended parent workflow.
-- Linux/Bash, Python 3.12.14. Exact-tree publication/readback uses the connected GitHub app. Earlier local partial-review artifacts remain outside this campaign/publication.
+- Working branch: `revision/008_fecf8cc-critical-comprehensive-review`; creation parent, integration and return target: `main`.
+- Original branch-off/reviewed source: `fecf8cc097c9bccc78c0ac29676d397a1fefaa15`; opening: `fc769adb516eba514f0a4987f902634a546af3a2`; published original review: `7fff37d4720ba38665ce688635a34e62b006fe48`.
+- Action checkpoints are retained in REVISION-REPORT. Metadata, focused references, presentation and campaigns 001–007 remain unchanged. Original review evidence is preserved; only entry routing changes runtime instructions. No suspended parent workflow.
+- Linux/Bash, Python 3.12.14. Pytest 9.2.0 is an isolated test-only dependency; checker runtime remains standard-library-only. Publication/readback uses the connected GitHub app.
 
-## Evidence and next boundary
+## Results and next boundary
 
-- Report links per-resource contribution/proportionality assessment, eight source-grounded scenario walkthroughs and reproducible structural/negative-fixture JSON evidence. Actual package validation is clean; reproduced checker weaknesses remain open.
-- Review checkpoint `7fff37d4720ba38665ce688635a34e62b006fe48` is published. Publish this accepted revision plan, execute and publish each verified action, then explicitly integrate into refreshed main and close. Release and installation remain outside scope.
+- Checker regressions: 48 passed after meaningful RED runs. Actual package validation/inventory and current-source/active-campaign checks pass; table inventory is 20 distinct rows / 20 reference files. Scope and preservation are checked before integration.
+- No independent consumer/client execution, alias activation, installation or live research is claimed. Prior behavioral coverage limits remain disclosed. Earlier stopped local artifacts are outside this campaign/publication.
+- Publish/read back finalization, explicitly merge the complete verified campaign tip into refreshed main, verify/publish the merge and return clean on main. After that boundary campaign 008 is closed and its records freeze. Stop without release, installation or additional work.

@@ -34,6 +34,23 @@ The row-by-row comparison against owning Scope/Inputs/Procedure/Outputs sections
 
 Validation: direct table extraction gives 20 rows, 20 unique reference targets and exact inventory equality. Package validation passes; current-source check with active campaign gives 20 references / 177 links / 0 errors at this checkpoint. No new behavioral tests are claimed for a prose clarification; existing checker regressions are rerun against the revised package.
 
-## Remaining actions and closure boundary
+## A-004: requested README cleanup
 
-A-001 was published as `62d2178d3f1a51c3cefd603018d62aa1871c5bfb`; A-002 as `c07fc99d10a7eed0586da8576cce360a39ae0a4e`. Publish/read back A-003 before user-requested A-004 (remove README Status, Illustrative revision and the identified safeguard paragraph). Closure and main integration follow verified completion of all four actions, not this intermediate checkpoint.
+**Executed and checked.** Removed the complete Status section, Illustrative revision subsection and paragraph beginning “The skill preserves quotations”, exactly as requested. Retained frontmatter, capability/use guidance, navigation and the supported development check instructions. Diff inspection and current-source link checks verify this prose-only cleanup; no content-mirroring unit tests were added.
+
+## Final disposition and integration boundary
+
+| Item | Current disposition | Evidence |
+| --- | --- | --- |
+| R-001 / A-001 | Fixed and verified | Bounded string/mapping parser; observed RED 19 failed / 10 passed, GREEN 29 passed |
+| R-002 / A-002 | Implemented and verified | Current-source default, explicit active selection and all scope; observed RED 17 failed / 31 passed, GREEN 48 passed |
+| R-003 / A-003 | Clarified and source-verified | 20 distinct table rows for 20 files, row/owner boundaries and composite route/stop checks; no independent client claim |
+| A-004 | Completed | Requested README removals; retained metadata/use/check sections and valid links |
+
+Published action checkpoints: A-001 `62d2178d3f1a51c3cefd603018d62aa1871c5bfb`, A-002 `c07fc99d10a7eed0586da8576cce360a39ae0a4e`, A-003 `dbe1a3df7d2dcdef7fb4d8be5c2d0076f4425345`. A-004 and these final records are ready for publication. All four actions are within the user's plan/fix/close instruction and subsequent routing/README steering.
+
+Final verification passed: 48 pytest regressions; actual package inventory/validation with 0 errors/warnings; documented current-source command (20 references / 165 links / 0 errors) and explicitly selected campaign (20 references / 180 links / 0 errors); 20-row/inventory equality and scope/whitespace checks. Original review helper/JSON/source/scenario evidence remain baseline observations; they were not overwritten or rerun as post-fix results. All focused reference/presentation blobs and campaigns 001–007 are preserved by object identity. Only the skill's entry routing changed; metadata, safeguards, Execution and Delivery are unchanged.
+
+The earlier zero-runtime-defect/entry pass was corrected by R-003, which is now addressed in source. No independent consumer behavior, alias activation, installation, live research or release verification was performed; those disclosed limits are unchanged and are not represented as fixed by checker or prose tests.
+
+The user authorized campaign closure. Publish/read back the final campaign tip, explicitly merge it into refreshed creation parent `main`, verify the merged result, publish/read back and return clean on `main`. Git records those subsequent integration/publication facts; this pre-integration report does not claim its own future SHA or completed merge. After that boundary campaign 008 is closed/frozen; no further task, release or installation is selected.
