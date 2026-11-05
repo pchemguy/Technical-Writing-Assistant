@@ -1,8 +1,9 @@
 """Check repository links, routing coverage, and local presentation properties.
 
 Run with Python 3.11 or newer. This read-only, standard-library checker supports
-the inline Markdown links and scalar metadata used by this repository. It does
-not validate arbitrary YAML, retrieve URLs, execute the skill, or judge prose.
+inline Markdown links, one-line string scalars and a two-space string metadata
+mapping. Unsupported YAML is reported as unverified with a nonzero result.
+It does not retrieve URLs, execute the skill, or judge prose.
 """
 
 from collections import Counter
@@ -11,6 +12,75 @@ from pathlib import Path
 import re
 import sys
 import xml.etree.ElementTree as ET
+
+
+FRONTMATTER_FIELDS = {"name", "description", "license", "compatibility", "metadata", "allowed-tools"}
+IMPLICIT_VALUES = {"null", "true", "false", "~", ".inf", "+.inf", "-.inf", ".nan"}
+NUMBER = re.compile(r"[-+]?(?:0[xob][0-9a-f_]+|[0-9][0-9_]*(?:\.[0-9_]*)?(?:e[-+]?[0-9]+)?|\.[0-9]+(?:e[-+]?[0-9]+)?)$", re.I)
+
+
+def string_scalar(value: str) -> str:
+    """Read a supported YAML string; never coerce a nonstring into a string."""
+    value = value.strip()
+    if value.startswith('"'):
+        try:
+            parsed, end = json.JSONDecoder().raw_decode(value)
+        except ValueError as error:
+            raise ValueError("unsupported double-quoted scalar") from error
+        remainder = value[end:]
+        if not isinstance(parsed, str) or (remainder and not re.fullmatch(r"\s+#.*|\s+", remainder)):
+            raise ValueError("unsupported quoted scalar suffix")
+        return parsed
+    if value.startswith("'"):
+        match = re.fullmatch(r"'((?:[^']|'')*)'(?:\s+#.*)?", value)
+        if not match:
+            raise ValueError("unsupported single-quoted scalar")
+        return match[1].replace("''", "'")
+    value = re.split(r"\s+#", value, maxsplit=1)[0].rstrip()
+    if (not value or value[0] in "[{>|&*!@`\"'" or value.startswith(("- ", "? ", ": "))
+            or value.lower() in IMPLICIT_VALUES or NUMBER.fullmatch(value)
+            or re.match(r"\d{4}-\d{2}-\d{2}(?:$|[Tt ])", value)
+            or ": " in value or any(ord(char) < 32 for char in value)):
+        raise ValueError("expected a one-line string scalar; unsupported or nonstring YAML")
+    return value
+
+
+def frontmatter_fields(text: str) -> dict:
+    """Parse the documented subset, rejecting duplicates and unverified syntax."""
+    fields = {}
+    nested = False
+    implicit_empty_metadata = False
+    for line in text.splitlines():
+        if not line.strip() or line.lstrip().startswith("#"):
+            continue
+        if line.startswith("  "):
+            match = re.fullmatch(r"  ([A-Za-z0-9_][\w.-]*):\s*(.*)", line)
+            if not nested or not match:
+                raise ValueError("unsupported nesting or indentation")
+            key, value = match.groups()
+            if key in fields["metadata"]:
+                raise ValueError(f"duplicate metadata key: {key}")
+            fields["metadata"][key] = string_scalar(value)
+            continue
+        match = re.fullmatch(r"([a-z][a-z-]*):\s*(.*)", line)
+        if not match:
+            raise ValueError("unsupported frontmatter line or indentation")
+        key, value = match.groups()
+        if key in fields:
+            raise ValueError(f"duplicate frontmatter key: {key}")
+        if key not in FRONTMATTER_FIELDS:
+            raise ValueError(f"unsupported frontmatter field: {key}")
+        nested = key == "metadata" and (not value.strip() or value.lstrip().startswith("#"))
+        if key == "metadata":
+            if not nested and not re.fullmatch(r"\{\}(?:\s+#.*)?", value.strip()):
+                raise ValueError("metadata must be a string mapping")
+            fields[key] = {}
+            implicit_empty_metadata = nested
+        else:
+            fields[key] = string_scalar(value)
+    if implicit_empty_metadata and not fields["metadata"]:
+        raise ValueError("metadata has no mapping entries; use metadata: {} for an empty mapping")
+    return fields
 
 
 def anchors(text: str) -> set[str]:
@@ -45,13 +115,17 @@ def check(root: Path) -> tuple[list[str], int, int]:
     if not front:
         errors.append("Missing frontmatter delimiters")
     else:
-        fields = dict(re.findall(r"^([a-z]+): (.+)$", front[1], re.MULTILINE))
-        if set(fields) != {"name", "description"}:
-            errors.append("Expected name and description scalar frontmatter")
-        if fields.get("name") != skill.name:
-            errors.append("Skill name does not match its directory")
-        if not 1 <= len(fields.get("description", "")) <= 1024:
-            errors.append("Description length outside supported range")
+        try:
+            fields = frontmatter_fields(front[1])
+        except ValueError as error:
+            errors.append(f"Frontmatter invalid or unverified: {error}")
+        else:
+            if fields.get("name") != skill.name:
+                errors.append("Skill name missing or does not match its directory")
+            if not 1 <= len(fields.get("description", "")) <= 1024:
+                errors.append("Description missing or length outside supported range")
+            if len(fields.get("compatibility", "")) > 500:
+                errors.append("Compatibility length outside supported range")
     references = {p.name for p in (skill / "references").glob("*.md")}
     routed = set(re.findall(r"\]\(references/([^)#]+\.md)(?:#[^)]*)?\)", entry))
     if routed != references:
