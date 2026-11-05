@@ -1,10 +1,10 @@
 # Project handoff
 
-Checkpoint: campaign `008_fecf8cc` comprehensive critical source/structural review U-001 complete on 2026-11-05; report publication pending.
+Checkpoint: campaign `008_fecf8cc` review published; accepted revisions A-001/A-002 planned on 2026-11-05.
 
 ## Workflow and authority
 
-- User requested a new campaign and comprehensive critical review. [REVIEW-PLAN.md](reviews/008_fecf8cc-critical-comprehensive-review/REVIEW-PLAN.md) owns U-001; [REVIEW-REPORT.md](reviews/008_fecf8cc-critical-comprehensive-review/REVIEW-REPORT.md) owns findings, coverage and proposed next work. Standard reporting.
+- User first requested comprehensive critical review and now explicitly authorizes revision planning, both fixes and closure. [REVIEW-PLAN.md](reviews/008_fecf8cc-critical-comprehensive-review/REVIEW-PLAN.md) owns U-001; [REVIEW-REPORT.md](reviews/008_fecf8cc-critical-comprehensive-review/REVIEW-REPORT.md) owns findings, coverage and proposed next work. [REVISION-PLAN.md](reviews/008_fecf8cc-critical-comprehensive-review/REVISION-PLAN.md) owns A-001/A-002. Standard reporting.
 - Scope inspected in full: 21 runtime Markdown files, both presentation files, checker and current root/governing documents. No external fact checking or reviewed-source edits.
 - Result: R-001 is a confirmed frontmatter-checking defect; R-002 recommends a supported current-source check command. No confirmed runtime-instruction defect was identified. Inline scenarios are not fresh consumer trials; independent behavioral acceptance remains unassessed under current delegation constraints.
 - Governing documents: [SPEC.md](SPEC.md), [CAPABILITY_MAP.md](CAPABILITY_MAP.md), [PLAN.md](PLAN.md).
@@ -19,4 +19,4 @@ Checkpoint: campaign `008_fecf8cc` comprehensive critical source/structural revi
 ## Evidence and next boundary
 
 - Report links per-resource contribution/proportionality assessment, eight source-grounded scenario walkthroughs and reproducible structural/negative-fixture JSON evidence. Actual package validation is clean; reproduced checker weaknesses remain open.
-- Publish/read back this report checkpoint and stop on the revision branch with campaign 008 open. Source repairs, revision planning/execution, main integration, closure, release and installation have not been authorized by the current review request.
+- Review checkpoint `7fff37d4720ba38665ce688635a34e62b006fe48` is published. Publish this accepted revision plan, execute and publish each verified action, then explicitly integrate into refreshed main and close. Release and installation remain outside scope.
