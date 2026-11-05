@@ -1,24 +1,22 @@
 # Project handoff
 
-Checkpoint: campaign `006_f2000ee` root review complete; explicit integration into `main` prepared on 2026-11-04. Final publication/readback establishes closure.
+Checkpoint: campaign `007_a3d514b` accepted scope complete; explicit integration into `main` prepared on 2026-11-05. Publication/readback establishes final closure.
 
-## Workflow and authority
+## Scope and authority
 
-- The user's pull-and-close request, followed by analysis of the completed review changes, is the completed scope. The earlier local source-review pass remains stopped. No suspended parent workflow or further project work is selected.
-- [Review plan](reviews/006_f2000ee-comprehensive-skill-review/REVIEW-PLAN.md) and [review report](reviews/006_f2000ee-comprehensive-skill-review/REVIEW-REPORT.md) retain coverage, raw evidence, final qualifications and closure checks. Governing documents: [SPEC.md](SPEC.md), [CAPABILITY_MAP.md](CAPABILITY_MAP.md), [PLAN.md](PLAN.md).
-- Imported review/check/consumer observations came from the other Windows checkout. Final analysis and administrative verification ran on Linux/Bash; publication uses the connected GitHub app. No source review, helper, consumer, installation or release rerun occurred here.
+- The user authorized opening, implementation and closure. Action A-001 and its verification are complete in [REVISION-PLAN.md](reviews/007_a3d514b-policy-cleanup-and-metadata/REVISION-PLAN.md) and [REVISION-REPORT.md](reviews/007_a3d514b-policy-cleanup-and-metadata/REVISION-REPORT.md). Standard reporting; no pending approval or suspended parent workflow.
+- Deleted the discovery and Windows shell policy files and their AGENTS sections. Added README `url` and the supplied skill frontmatter display name, aliases string, author and repository.
+- Governing documents: [SPEC.md](SPEC.md), [CAPABILITY_MAP.md](CAPABILITY_MAP.md), [PLAN.md](PLAN.md). Skill instructions, references, presentation and campaigns 001–006 are unchanged.
 
 ## Integration provenance
 
-- Campaign branch: `revision/006_f2000ee-comprehensive-skill-review`; recorded creation parent, receiving branch and return target: `main`.
-- Original opening: `022e9b59b308858896ce4c8c9b9233bb71ab53cd`; branch-off/reviewed baseline and refreshed receiving tip: `f2000eeb61b125dd1efca421926cffd11545b4a3`.
-- Imported completed review: `b149a82e9e1cac10eaef059735e5b83f78d978ad`; verified published final campaign tip: `499e4443722c57d569be438690dc482b242a5abf`.
-- Runtime tree: `02b47f96efd08fd23d1e12259c9d532dd4dcd69d`, unchanged. Root policies, governing specification/map/plan, checker and campaigns 001–005 are unchanged.
+- Working branch: `revision/007_a3d514b-policy-cleanup-and-metadata`; recorded creation parent, receiving and return branch: `main`.
+- Original branch-off baseline and refreshed target tip: `a3d514bb2b8ce6e311d8b5cabb2130f61548a2fa`.
+- Original opening: `663c46cc5a8248c5fc21ee385ff7ede31740c071`; verified published source/implementation tip: `6a45675dbfc199b2f184d275d630638a30077af9`.
+- Linux/Bash, Python 3.12.14, Git 2.51.1; exact-tree publication and ref readback through the connected GitHub app.
 
-## Result and return boundary
+## Results and return boundary
 
-- Review records cover C-001–C-007, all 21 runtime Markdown files and six consumer requests in two contexts. No runtime source defect or required runtime revision is confirmed; no source fix is delivered.
-- Final analysis corrects independent-reviewer attribution and records one added customer commitment in sample A-3, qualifying the imported zero-sample-failure conclusion. All nine imported raw-evidence/independent files remain unchanged.
-- Eight stopped local partial-review files remain separately outside the repository in a local archive/manifest. Automatic approval review rejected their upload; neither archive nor manifest is included in this integration.
-- Administrative checks: eight local archive entry sizes/hashes, 56 active-record local link targets, unchanged imported evidence, whitespace, full-delta scope and source preservation. No external URL, heading-fragment, live-research, cross-model or target-client validation is claimed.
-- The explicit two-parent merge into `main` requires publication and exact remote readback, then clean return on `main`; Git records those subsequent facts. After that boundary, campaign 006 is closed and its records are frozen. Stop; further review, revision, maintenance, release or installation requires a new user request.
+- Exact edits and metadata values/types, offline package validation/inventory, current-source fixture links/anchors/routing/presentation, whitespace and full-scope preservation passed. The fixture checks 20 references and 164 local Markdown links with 0 errors; package validation reports 0 errors/warnings.
+- Closed campaign records and historical contents were excluded from current-validity checks. No writing-workflow, alias activation, client loading, external URL, installation or release behavior is claimed. Earlier stopped local artifacts remain outside this campaign/publication.
+- The explicit two-parent merge into `main` requires publication and exact remote readback, then clean return on `main`; Git records these subsequent facts. After that boundary campaign 007 is closed and frozen. Stop; no additional revision, release or installation is selected.
