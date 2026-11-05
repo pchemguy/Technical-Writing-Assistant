@@ -1,24 +1,19 @@
 # Project handoff
 
-Checkpoint: campaign `006_f2000ee` root review complete; explicit integration into `main` prepared on 2026-11-04. Final publication/readback establishes closure.
+Checkpoint: campaign `007_a3d514b` opened for the user's accepted policy cleanup and metadata amendment on 2026-11-05.
 
-## Workflow and authority
+## Scope and authority
 
-- The user's pull-and-close request, followed by analysis of the completed review changes, is the completed scope. The earlier local source-review pass remains stopped. No suspended parent workflow or further project work is selected.
-- [Review plan](reviews/006_f2000ee-comprehensive-skill-review/REVIEW-PLAN.md) and [review report](reviews/006_f2000ee-comprehensive-skill-review/REVIEW-REPORT.md) retain coverage, raw evidence, final qualifications and closure checks. Governing documents: [SPEC.md](SPEC.md), [CAPABILITY_MAP.md](CAPABILITY_MAP.md), [PLAN.md](PLAN.md).
-- Imported review/check/consumer observations came from the other Windows checkout. Final analysis and administrative verification ran on Linux/Bash; publication uses the connected GitHub app. No source review, helper, consumer, installation or release rerun occurred here.
+- The user authorized opening, implementing and closing this campaign. [REVISION-PLAN.md](reviews/007_a3d514b-policy-cleanup-and-metadata/REVISION-PLAN.md) owns action A-001 and acceptance. Standard reporting; no further approval checkpoint is pending.
+- Scope: remove two root policy files and their AGENTS sections, add README `url` and the supplied skill frontmatter metadata. Preserve unrelated content and campaigns 001–006.
+- Governing documents: [SPEC.md](SPEC.md), [CAPABILITY_MAP.md](CAPABILITY_MAP.md), [PLAN.md](PLAN.md). No main task-list implementation is selected.
 
-## Integration provenance
+## Provenance and return
 
-- Campaign branch: `revision/006_f2000ee-comprehensive-skill-review`; recorded creation parent, receiving branch and return target: `main`.
-- Original opening: `022e9b59b308858896ce4c8c9b9233bb71ab53cd`; branch-off/reviewed baseline and refreshed receiving tip: `f2000eeb61b125dd1efca421926cffd11545b4a3`.
-- Imported completed review: `b149a82e9e1cac10eaef059735e5b83f78d978ad`; verified published final campaign tip: `499e4443722c57d569be438690dc482b242a5abf`.
-- Runtime tree: `02b47f96efd08fd23d1e12259c9d532dd4dcd69d`, unchanged. Root policies, governing specification/map/plan, checker and campaigns 001–005 are unchanged.
+- Working branch: `revision/007_a3d514b-policy-cleanup-and-metadata`; recorded creation parent, integration target and return branch: `main`.
+- Branch-off baseline: `a3d514bb2b8ce6e311d8b5cabb2130f61548a2fa`, verified published. Campaign 006 is already integrated; no suspended parent workflow.
+- Linux/Bash host with Python 3.12.14 and Git 2.51.1. Repository-local discovery directories are absent. Use the connected GitHub app for exact-tree publication/readback.
 
-## Result and return boundary
+## Next boundary
 
-- Review records cover C-001–C-007, all 21 runtime Markdown files and six consumer requests in two contexts. No runtime source defect or required runtime revision is confirmed; no source fix is delivered.
-- Final analysis corrects independent-reviewer attribution and records one added customer commitment in sample A-3, qualifying the imported zero-sample-failure conclusion. All nine imported raw-evidence/independent files remain unchanged.
-- Eight stopped local partial-review files remain separately outside the repository in a local archive/manifest. Automatic approval review rejected their upload; neither archive nor manifest is included in this integration.
-- Administrative checks: eight local archive entry sizes/hashes, 56 active-record local link targets, unchanged imported evidence, whitespace, full-delta scope and source preservation. No external URL, heading-fragment, live-research, cross-model or target-client validation is claimed.
-- The explicit two-parent merge into `main` requires publication and exact remote readback, then clean return on `main`; Git records those subsequent facts. After that boundary, campaign 006 is closed and its records are frozen. Stop; further review, revision, maintenance, release or installation requires a new user request.
+Publish/read back this opening before source edits, execute and verify A-001, publish its report and source together, then complete explicit verified integration into `main`. Stop after closure; no release or installation is authorized. Earlier stopped local artifacts remain outside this campaign and publication.
